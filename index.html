@@ -1,443 +1,138 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="De officiële clubwebsite van Gigi-United uit Gulpen." />
   <title>Gigi-United | Officiële clubwebsite</title>
-
-  <style>
-    :root {
-      --black: #08090c;
-      --dark: #11131a;
-      --white: #f7f4ef;
-      --pink: #f39ac2;
-      --blue: #9ed8f4;
-      --deep-blue: #142d4f;
-      --grey: #a8adb8;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: var(--black);
-      color: var(--white);
-      line-height: 1.6;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .site-header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 32px;
-      padding: 16px 6%;
-      background: rgba(8, 9, 12, 0.96);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-    }
-
-    .brand-mark {
-      width: 48px;
-      height: 48px;
-      display: grid;
-      place-items: center;
-      border: 2px solid var(--pink);
-      border-radius: 50%;
-      color: var(--blue);
-      font-weight: 900;
-    }
-
-    .brand-text strong {
-      display: block;
-      font-size: 1.1rem;
-      letter-spacing: 0.12em;
-    }
-
-    .brand-text span {
-      display: block;
-      color: var(--grey);
-      font-size: 0.75rem;
-      letter-spacing: 0.08em;
-    }
-
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 22px;
-      font-size: 0.9rem;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
-
-    nav a:hover {
-      color: var(--pink);
-    }
-
-    .hero {
-      min-height: 76vh;
-      display: flex;
-      align-items: flex-end;
-      padding: 80px 7%;
-      background:
-        linear-gradient(
-          90deg,
-          rgba(5, 6, 9, 0.96) 0%,
-          rgba(5, 6, 9, 0.72) 55%,
-          rgba(5, 6, 9, 0.25) 100%
-        ),
-        radial-gradient(circle at 80% 25%, rgba(158, 216, 244, 0.35), transparent 32%),
-        radial-gradient(circle at 70% 75%, rgba(243, 154, 194, 0.28), transparent 35%),
-        var(--dark);
-    }
-
-    .hero-content {
-      max-width: 760px;
-    }
-
-    .eyebrow {
-      color: var(--blue);
-      font-weight: 800;
-      letter-spacing: 0.25em;
-      text-transform: uppercase;
-      margin-bottom: 14px;
-    }
-
-    h1 {
-      font-size: clamp(3rem, 8vw, 7rem);
-      line-height: 0.92;
-      letter-spacing: -0.04em;
-      text-transform: uppercase;
-    }
-
-    .hero h1 span {
-      color: var(--pink);
-    }
-
-    .hero-description {
-      max-width: 610px;
-      margin: 24px 0 30px;
-      color: #d9dce3;
-      font-size: 1.1rem;
-    }
-
-    .hero-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 13px 20px;
-      border-radius: 4px;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-    }
-
-    .button-primary {
-      background: linear-gradient(90deg, var(--pink), var(--blue));
-      color: #081018;
-    }
-
-    .button-secondary {
-      border: 1px solid rgba(255, 255, 255, 0.45);
-    }
-
-    main {
-      width: min(1180px, 88%);
-      margin: 0 auto;
-      padding: 70px 0;
-    }
-
-    .section-heading {
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
-      gap: 20px;
-      margin-bottom: 26px;
-    }
-
-    .section-heading h2 {
-      font-size: clamp(2rem, 4vw, 3.2rem);
-      text-transform: uppercase;
-    }
-
-    .section-heading a {
-      color: var(--blue);
-      font-weight: 700;
-    }
-
-    .news-grid {
-      display: grid;
-      grid-template-columns: 1.5fr 1fr 1fr;
-      gap: 20px;
-    }
-
-    .news-card {
-      min-height: 330px;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 26px;
-      border: 1px solid rgba(255, 255, 255, 0.11);
-      border-radius: 10px;
-      background:
-        linear-gradient(to top, rgba(7, 8, 12, 0.98), rgba(7, 8, 12, 0.25)),
-        linear-gradient(135deg, rgba(243, 154, 194, 0.25), rgba(158, 216, 244, 0.16)),
-        var(--dark);
-    }
-
-    .news-card:first-child {
-      min-height: 470px;
-    }
-
-    .news-category {
-      display: inline-block;
-      width: fit-content;
-      margin-bottom: 10px;
-      padding: 5px 9px;
-      background: var(--pink);
-      color: #111;
-      border-radius: 3px;
-      font-size: 0.72rem;
-      font-weight: 900;
-      text-transform: uppercase;
-    }
-
-    .news-card time {
-      color: var(--grey);
-      font-size: 0.86rem;
-    }
-
-    .news-card h3 {
-      margin: 8px 0;
-      font-size: 1.45rem;
-      line-height: 1.15;
-    }
-
-    .news-card:first-child h3 {
-      font-size: clamp(1.8rem, 3vw, 2.8rem);
-    }
-
-    .club-strip {
-      margin-top: 70px;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      border-radius: 10px;
-      overflow: hidden;
-    }
-
-    .club-stat {
-      padding: 28px;
-      background: var(--dark);
-      text-align: center;
-    }
-
-    .club-stat + .club-stat {
-      border-left: 1px solid rgba(255, 255, 255, 0.12);
-    }
-
-    .club-stat strong {
-      display: block;
-      color: var(--blue);
-      font-size: 2rem;
-    }
-
-    .club-stat span {
-      color: var(--grey);
-      text-transform: uppercase;
-      font-size: 0.78rem;
-      letter-spacing: 0.1em;
-    }
-
-    footer {
-      margin-top: 40px;
-      padding: 34px 6%;
-      text-align: center;
-      color: var(--grey);
-      border-top: 1px solid rgba(255, 255, 255, 0.12);
-    }
-
-    @media (max-width: 900px) {
-      .site-header {
-        align-items: flex-start;
-        flex-direction: column;
-      }
-
-      nav {
-        gap: 14px;
-      }
-
-      .news-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .news-card,
-      .news-card:first-child {
-        min-height: 340px;
-      }
-    }
-
-    @media (max-width: 620px) {
-      .hero {
-        min-height: 68vh;
-        padding: 60px 6%;
-      }
-
-      nav {
-        font-size: 0.78rem;
-      }
-
-      .club-strip {
-        grid-template-columns: 1fr;
-      }
-
-      .club-stat + .club-stat {
-        border-left: 0;
-        border-top: 1px solid rgba(255, 255, 255, 0.12);
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-
 <body>
-
   <header class="site-header">
-    <a class="brand" href="#">
-      <div class="brand-mark">GU</div>
-
-      <div class="brand-text">
+    <a class="brand" href="index.html" aria-label="Gigi-United home">
+      <img src="assets/logo-modern.png" alt="Logo Gigi-United" />
+      <div>
         <strong>GIGI-UNITED</strong>
-        <span>GULPEN · EST. 2024</span>
+        <span>Gulpen · Est. 2024</span>
       </div>
     </a>
 
-    <nav>
-      <a href="#">Home</a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav">
+      Menu
+    </button>
+
+    <nav id="main-nav" class="main-nav">
+      <a class="active" href="index.html">Home</a>
       <a href="#nieuws">Nieuws</a>
-      <a href="#">Wedstrijden</a>
-      <a href="#">Selectie</a>
-      <a href="#">Club</a>
-      <a href="#">Stadion</a>
+      <a href="#wedstrijd">Wedstrijden</a>
+      <a href="#club">Club</a>
+      <a href="#stadion">Stadion</a>
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <p class="eyebrow">De trots van Gulpen</p>
-
-      <h1>Gigi-<span>United</span></h1>
-
-      <p class="hero-description">
-        Welkom bij de officiële clubwebsite van Gigi-United.
-        Vanuit het Blue Rox Stadium schrijven we sinds 2024
-        onze eigen voetbalgeschiedenis.
-      </p>
-
-      <div class="hero-buttons">
-        <a class="button button-primary" href="#nieuws">
-          Laatste nieuws
-        </a>
-
-        <a class="button button-secondary" href="#">
-          Ontdek de club
-        </a>
-      </div>
-    </div>
-  </section>
-
   <main>
-    <section id="nieuws">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">Actueel</p>
-          <h2>Laatste nieuws</h2>
-        </div>
+    <section class="hero">
+      <div class="hero-glow hero-glow-pink"></div>
+      <div class="hero-glow hero-glow-blue"></div>
 
-        <a href="#">Bekijk alles →</a>
+      <div class="hero-copy">
+        <p class="eyebrow">De trots van Gulpen</p>
+        <h1>Welkom bij<br><span>Gigi-United</span></h1>
+        <p>
+          Passie op het veld. Verbonden met Gulpen. Vanuit het Blue Rox Stadium
+          bouwen we sinds 2024 aan onze eigen voetbalgeschiedenis.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#nieuws">Laatste nieuws</a>
+          <a class="button button-secondary" href="#club">Ontdek de club</a>
+        </div>
       </div>
 
-      <div class="news-grid">
-
-        <!-- Nieuwste bericht staat altijd als eerste -->
-        <article class="news-card">
-          <span class="news-category">Clubnieuws</span>
-          <time datetime="2026-07-12">12 juli 2026</time>
-
-          <h3>De officiële website van Gigi-United is geopend</h3>
-
-          <p>
-            Een nieuwe digitale thuisbasis voor de club,
-            de spelers en de Rossoneri.
-          </p>
-        </article>
-
-        <article class="news-card">
-          <span class="news-category">Wedstrijd</span>
-          <time datetime="2026-07-11">11 juli 2026</time>
-
-          <h3>Voorbereiding op het nieuwe seizoen begonnen</h3>
-
-          <p>
-            De selectie werkt toe naar de eerste officiële wedstrijd.
-          </p>
-        </article>
-
-        <article class="news-card">
-          <span class="news-category">Stadion</span>
-          <time datetime="2026-07-10">10 juli 2026</time>
-
-          <h3>Blue Rox Stadium klaar voor een nieuw hoofdstuk</h3>
-
-          <p>
-            De thuishaven van Gigi-United biedt plaats aan 12.000 supporters.
-          </p>
-        </article>
-
+      <div class="hero-logo-wrap">
+        <img src="assets/logo-modern.png" alt="" class="hero-logo" />
       </div>
     </section>
 
-    <section class="club-strip">
-      <div class="club-stat">
-        <strong>2024</strong>
-        <span>Opgericht</span>
+    <section id="wedstrijd" class="match-section shell">
+      <div class="section-title">
+        <div>
+          <p class="eyebrow">Wedstrijddag</p>
+          <h2>Volgende wedstrijd</h2>
+        </div>
       </div>
 
-      <div class="club-stat">
-        <strong>12.000</strong>
-        <span>Stadioncapaciteit</span>
+      <article class="match-card">
+        <div class="match-meta">
+          <span>Competitie VI.997</span>
+          <strong>Zondag · 20:00 uur</strong>
+        </div>
+        <div class="teams">
+          <div class="team">
+            <img src="assets/logo-modern.png" alt="" />
+            <strong>Gigi-United</strong>
+          </div>
+          <div class="versus">VS</div>
+          <div class="team opponent">
+            <div class="opponent-mark">?</div>
+            <strong>Tegenstander</strong>
+          </div>
+        </div>
+        <p class="match-location">Blue Rox Stadium · Gulpen</p>
+      </article>
+    </section>
+
+    <section id="nieuws" class="news-section shell">
+      <div class="section-title">
+        <div>
+          <p class="eyebrow">Gigi Gazette</p>
+          <h2>Laatste nieuws</h2>
+        </div>
+        <span class="section-note">Nieuwste bericht staat automatisch bovenaan</span>
       </div>
 
-      <div class="club-stat">
-        <strong>VI.997</strong>
-        <span>Competitie</span>
+      <div id="news-grid" class="news-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="club" class="club-section">
+      <div class="shell club-layout">
+        <div class="historic-logo-card">
+          <img src="assets/logo-historic.png" alt="Historisch clubwapen van Gigi-United" />
+        </div>
+
+        <div class="club-copy">
+          <p class="eyebrow">Onze identiteit</p>
+          <h2>Jong van leeftijd.<br>Rijk aan karakter.</h2>
+          <p>
+            Gigi-United werd opgericht in 2024 en draagt Gulpen zichtbaar mee.
+            Het moderne logo staat voor de huidige clubidentiteit; het historische
+            wapen vertelt waar de club vandaan komt.
+          </p>
+          <div class="facts">
+            <div><strong>2024</strong><span>Opgericht</span></div>
+            <div><strong>12.000</strong><span>Capaciteit</span></div>
+            <div><strong>VI.997</strong><span>Competitie</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="stadion" class="stadium-section shell">
+      <div class="stadium-card">
+        <p class="eyebrow">Onze thuisbasis</p>
+        <h2>Blue Rox Stadium</h2>
+        <p>
+          Plaats voor 12.000 supporters en het kloppende hart van Gigi-United.
+          Binnenkort krijgt deze pagina tribunes, historie, sfeerbeelden en stadionrecords.
+        </p>
       </div>
     </section>
   </main>
 
   <footer>
-    © 2026 Gigi-United · Gulpen · Blue Rox Stadium
+    <img src="assets/logo-modern.png" alt="" />
+    <p>© 2026 Gigi-United · Gulpen · Blue Rox Stadium</p>
   </footer>
 
+  <script src="js/app.js"></script>
 </body>
 </html>
