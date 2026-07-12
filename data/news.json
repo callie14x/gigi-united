@@ -1,20 +1,30 @@
 [
   {
-    "title": "De officiële website van Gigi-United is geopend",
+    "title": "Rossoneri klaar voor een nieuw seizoen",
     "date": "2026-07-12",
     "category": "Clubnieuws",
-    "summary": "Gigi-United heeft een nieuwe digitale thuisbasis voor spelers, supporters en de Rossoneri."
+    "summary": "De supporters zijn er klaar voor. Samen achter Gigi-United, thuis en uit.",
+    "image": "assets/stadium-hero.jpg"
   },
   {
-    "title": "Voorbereiding op het nieuwe seizoen begonnen",
+    "title": "Selectie hervat de training in Gulpen",
     "date": "2026-07-11",
-    "category": "Wedstrijd",
-    "summary": "De selectie werkt toe naar de eerste competitiewedstrijd in VI.997."
+    "category": "Team",
+    "summary": "De voorbereiding is officieel begonnen.",
+    "image": "assets/stadium-hero.jpg"
   },
   {
-    "title": "Blue Rox Stadium klaar voor een nieuw hoofdstuk",
+    "title": "Blue Rox Stadium helemaal klaar voor seizoen 2026/27",
     "date": "2026-07-10",
     "category": "Stadion",
-    "summary": "De thuishaven van Gigi-United biedt plaats aan 12.000 supporters."
+    "summary": "De thuishaven wacht op de eerste thuiswedstrijd.",
+    "image": "assets/stadium-hero.jpg"
+  },
+  {
+    "title": "Gigi-United versterkt zich met aanvallende middenvelder",
+    "date": "2026-07-09",
+    "category": "Transfer",
+    "summary": "De club verwelkomt een nieuwe spelmaker.",
+    "image": "assets/logo-modern.jpg"
   }
 ]

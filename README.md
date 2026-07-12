@@ -1,21 +1,21 @@
-# Gigi-United website
+# Gigi-United website v2.0
 
-Versie 1.1 van de officiële clubwebsite.
+## Uploaden naar GitHub
 
-## Nieuws toevoegen
+Upload de volledige inhoud van deze map naar de root van je repository.
 
-Open `data/news.json` op GitHub, klik op het potlood en voeg bovenaan een nieuw bericht toe.
-De website sorteert alle berichten automatisch op datum, zodat het nieuwste bericht bovenaan verschijnt.
+## Nieuws aanpassen
 
-Voorbeeld:
+Open `data/news.json` en voeg een bericht toe. De website sorteert automatisch op datum.
 
-```json
-{
-  "title": "Titel van het bericht",
-  "date": "2026-07-13",
-  "category": "Clubnieuws",
-  "summary": "Korte samenvatting voor de homepage."
-}
-```
+## Volgende wedstrijd aanpassen
 
-Let op de komma tussen de berichten.
+Open `data/next-match.json`.
+
+## Laatste uitslag aanpassen
+
+Open `data/last-result.json`.
+
+## Stand aanpassen
+
+Open `data/standings.json`.

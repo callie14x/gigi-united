@@ -1,0 +1,37 @@
+[
+  {
+    "pos": 1,
+    "club": "Gigi-United",
+    "played": 2,
+    "diff": "+5",
+    "points": 6
+  },
+  {
+    "pos": 2,
+    "club": "FC Eindhoven",
+    "played": 2,
+    "diff": "+3",
+    "points": 6
+  },
+  {
+    "pos": 3,
+    "club": "VV Zaltbommel",
+    "played": 2,
+    "diff": "+2",
+    "points": 4
+  },
+  {
+    "pos": 4,
+    "club": "HSV Hoek",
+    "played": 2,
+    "diff": "+1",
+    "points": 4
+  },
+  {
+    "pos": 5,
+    "club": "Jong N.E.C.",
+    "played": 2,
+    "diff": "0",
+    "points": 3
+  }
+]

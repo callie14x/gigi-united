@@ -1,136 +1,118 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="De officiële clubwebsite van Gigi-United uit Gulpen." />
-  <title>Gigi-United | Officiële clubwebsite</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Officiële website van Gigi-United uit Gulpen.">
+  <title>Gigi-United | De trots van Gulpen</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="index.html" aria-label="Gigi-United home">
-      <img src="assets/logo-modern.png" alt="Logo Gigi-United" />
+  <header class="topbar">
+    <a class="brand" href="index.html">
+      <img src="assets/logo-modern.jpg" alt="Gigi-United logo">
       <div>
         <strong>GIGI-UNITED</strong>
         <span>Gulpen · Est. 2024</span>
       </div>
     </a>
 
-    <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav">
-      Menu
-    </button>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
 
     <nav id="main-nav" class="main-nav">
       <a class="active" href="index.html">Home</a>
       <a href="#nieuws">Nieuws</a>
-      <a href="#wedstrijd">Wedstrijden</a>
+      <a href="#wedstrijden">Wedstrijden</a>
+      <a href="#selectie">Selectie</a>
       <a href="#club">Club</a>
       <a href="#stadion">Stadion</a>
+      <a href="#fans">Fans</a>
+      <a href="#media">Media</a>
     </nav>
+
+    <a class="ticket-button" href="#wedstrijden">Tickets</a>
   </header>
 
   <main>
     <section class="hero">
-      <div class="hero-glow hero-glow-pink"></div>
-      <div class="hero-glow hero-glow-blue"></div>
-
+      <div class="hero-overlay"></div>
       <div class="hero-copy">
         <p class="eyebrow">De trots van Gulpen</p>
-        <h1>Welkom bij<br><span>Gigi-United</span></h1>
-        <p>
-          Passie op het veld. Verbonden met Gulpen. Vanuit het Blue Rox Stadium
-          bouwen we sinds 2024 aan onze eigen voetbalgeschiedenis.
-        </p>
+        <h1>Gigi-<span>United</span></h1>
+        <p class="hero-intro">Vanuit het Blue Rox Stadium schrijven we onze eigen voetbalgeschiedenis.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#nieuws">Laatste nieuws</a>
-          <a class="button button-secondary" href="#club">Ontdek de club</a>
+          <a class="btn btn-primary" href="#nieuws">Laatste nieuws</a>
+          <a class="btn btn-outline" href="#wedstrijden">Tickets & info</a>
         </div>
       </div>
 
-      <div class="hero-logo-wrap">
-        <img src="assets/logo-modern.png" alt="" class="hero-logo" />
-      </div>
+      <aside id="next-match-card" class="next-match-card" aria-live="polite"></aside>
     </section>
 
-    <section id="wedstrijd" class="match-section shell">
-      <div class="section-title">
-        <div>
-          <p class="eyebrow">Wedstrijddag</p>
-          <h2>Volgende wedstrijd</h2>
-        </div>
-      </div>
-
-      <article class="match-card">
-        <div class="match-meta">
-          <span>Competitie VI.997</span>
-          <strong>Zondag · 20:00 uur</strong>
-        </div>
-        <div class="teams">
-          <div class="team">
-            <img src="assets/logo-modern.png" alt="" />
-            <strong>Gigi-United</strong>
-          </div>
-          <div class="versus">VS</div>
-          <div class="team opponent">
-            <div class="opponent-mark">?</div>
-            <strong>Tegenstander</strong>
-          </div>
-        </div>
-        <p class="match-location">Blue Rox Stadium · Gulpen</p>
-      </article>
-    </section>
-
-    <section id="nieuws" class="news-section shell">
-      <div class="section-title">
-        <div>
-          <p class="eyebrow">Gigi Gazette</p>
+    <section class="dashboard shell">
+      <div class="news-panel panel" id="nieuws">
+        <div class="panel-head">
           <h2>Laatste nieuws</h2>
+          <a href="#nieuws">Bekijk alle nieuws →</a>
         </div>
-        <span class="section-note">Nieuwste bericht staat automatisch bovenaan</span>
+        <div id="news-grid" class="news-grid"></div>
       </div>
 
-      <div id="news-grid" class="news-grid" aria-live="polite"></div>
-    </section>
-
-    <section id="club" class="club-section">
-      <div class="shell club-layout">
-        <div class="historic-logo-card">
-          <img src="assets/logo-historic.png" alt="Historisch clubwapen van Gigi-United" />
-        </div>
-
-        <div class="club-copy">
-          <p class="eyebrow">Onze identiteit</p>
-          <h2>Jong van leeftijd.<br>Rijk aan karakter.</h2>
-          <p>
-            Gigi-United werd opgericht in 2024 en draagt Gulpen zichtbaar mee.
-            Het moderne logo staat voor de huidige clubidentiteit; het historische
-            wapen vertelt waar de club vandaan komt.
-          </p>
-          <div class="facts">
-            <div><strong>2024</strong><span>Opgericht</span></div>
-            <div><strong>12.000</strong><span>Capaciteit</span></div>
-            <div><strong>VI.997</strong><span>Competitie</span></div>
+      <div class="side-stack">
+        <section class="panel result-panel" id="wedstrijden">
+          <div class="panel-head">
+            <h2>Laatste wedstrijd</h2>
+            <span>VI.997</span>
           </div>
-        </div>
+          <div id="last-result"></div>
+        </section>
+
+        <section class="panel standings-panel">
+          <div class="panel-head">
+            <h2>Stand VI.997</h2>
+            <span>Speelronde 2</span>
+          </div>
+          <div id="standings-table"></div>
+        </section>
       </div>
     </section>
 
-    <section id="stadion" class="stadium-section shell">
-      <div class="stadium-card">
+    <section class="stats-strip">
+      <div><span>Opgericht</span><strong>2024</strong><small>In het hart van Gulpen</small></div>
+      <div><span>Blue Rox Stadium</span><strong>12.000</strong><small>Onze thuishaven</small></div>
+      <div><span>Rossoneri</span><strong>Onze trots</strong><small>Samen zijn we Gigi-United</small></div>
+      <div><span>Één ambitie</span><strong>Groeien & winnen</strong><small>Vandaag, morgen, altijd</small></div>
+      <div><span>Passie. Trots. Samen.</span><strong>Gigi-United</strong><small>Meer dan een club</small></div>
+    </section>
+
+    <section id="club" class="club-section shell">
+      <div class="club-visual">
+        <img src="assets/logo-historic.png" alt="Historisch logo van Gigi-United">
+      </div>
+      <div class="club-copy">
+        <p class="eyebrow">Onze identiteit</p>
+        <h2>Modern op het veld.<br>Geworteld in Gulpen.</h2>
+        <p>Het moderne logo staat voor de energie van nu. Het historische clubwapen vertelt het verhaal van Limburg, Gulpen en de hulpverleningsachtergrond van de oprichter.</p>
+        <a class="btn btn-outline" href="#">Ontdek de club</a>
+      </div>
+    </section>
+
+    <section id="stadion" class="stadium-section">
+      <div class="stadium-image"></div>
+      <div class="stadium-copy shell">
         <p class="eyebrow">Onze thuisbasis</p>
         <h2>Blue Rox Stadium</h2>
-        <p>
-          Plaats voor 12.000 supporters en het kloppende hart van Gigi-United.
-          Binnenkort krijgt deze pagina tribunes, historie, sfeerbeelden en stadionrecords.
-        </p>
+        <p>12.000 plaatsen, vier lichtmasten en midden in het Zuid-Limburgse heuvelland.</p>
       </div>
     </section>
   </main>
 
   <footer>
-    <img src="assets/logo-modern.png" alt="" />
-    <p>© 2026 Gigi-United · Gulpen · Blue Rox Stadium</p>
+    <img src="assets/logo-modern.jpg" alt="">
+    <div>
+      <strong>Gigi-United</strong>
+      <span>Gulpen · Nederland · VI.997</span>
+    </div>
   </footer>
 
   <script src="js/app.js"></script>

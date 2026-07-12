@@ -1,0 +1,12 @@
+{
+  "home": {
+    "name": "Gigi-United",
+    "logo": "assets/logo-modern.jpg",
+    "score": 4
+  },
+  "away": {
+    "name": "FC Maasland",
+    "logo": "assets/logo-modern.jpg",
+    "score": 1
+  }
+}
