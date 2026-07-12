@@ -103,7 +103,19 @@ function renderLastResult(result) {
 }
 
 function renderStandings(rows) {
-  document.querySelector('#standings-table').innerHTML = `
+  const target = document.querySelector('#standings-table');
+
+  if (!rows.length) {
+    target.innerHTML = `
+      <div class="standings-empty">
+        <strong>Competitie-indeling volgt</strong>
+        <p>De namen van de overige teams zijn nog niet bekend.</p>
+      </div>
+    `;
+    return;
+  }
+
+  target.innerHTML = `
     <table class="standings">
       <thead><tr><th>#</th><th>Club</th><th>G</th><th>DS</th><th>Ptn</th></tr></thead>
       <tbody>
