@@ -19,3 +19,11 @@ Open `data/last-result.json`.
 ## Stand aanpassen
 
 Open `data/standings.json`.
+
+
+## Mediabibliotheek
+
+- `assets/fans/rossoneri-01.jpg` t/m `rossoneri-20.jpg`
+- `assets/training/training-01.jpg` t/m `training-20.jpg`
+
+Supporters- en trainingsnieuws gebruikt automatisch een passende afbeelding.

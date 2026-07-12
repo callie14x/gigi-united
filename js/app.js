@@ -29,17 +29,24 @@ async function loadData() {
   renderStandings(standings);
 }
 
-function supporterImageFor(post) {
+function mediaImageFor(post) {
   const text = `${post.title || ''} ${post.summary || ''} ${post.category || ''}`.toLowerCase();
-  const supporterWords = ['rossoneri', 'supporter', 'supporters', 'fans', 'fanclub'];
 
-  if (!supporterWords.some(word => text.includes(word))) {
-    return post.image || 'assets/stadium-hero.jpg';
+  const supporterWords = ['rossoneri', 'supporter', 'supporters', 'fans', 'fanclub'];
+  if (supporterWords.some(word => text.includes(word))) {
+    const hash = [...text].reduce((total, char) => total + char.charCodeAt(0), 0);
+    const number = String((hash % 20) + 1).padStart(2, '0');
+    return `assets/fans/rossoneri-${number}.jpg`;
   }
 
-  const hash = [...text].reduce((total, char) => total + char.charCodeAt(0), 0);
-  const number = String((hash % 20) + 1).padStart(2, '0');
-  return `assets/fans/rossoneri-${number}.jpg`;
+  const trainingWords = ['training', 'trainen', 'trainingen', 'selectie', 'voorbereiding'];
+  if (trainingWords.some(word => text.includes(word))) {
+    const hash = [...text].reduce((total, char) => total + char.charCodeAt(0), 0);
+    const number = String((hash % 20) + 1).padStart(2, '0');
+    return `assets/training/training-${number}.jpg`;
+  }
+
+  return post.image || 'assets/stadium-hero.jpg';
 }
 
 function renderNews(posts) {
@@ -48,7 +55,7 @@ function renderNews(posts) {
   const container = document.querySelector('#news-grid');
 
   container.innerHTML = `
-    <article class="featured-news" style="background-image:linear-gradient(to top,rgba(0,0,0,.93),rgba(0,0,0,.08)),url('${esc(supporterImageFor(first))}')">
+    <article class="featured-news" style="background-image:linear-gradient(to top,rgba(0,0,0,.93),rgba(0,0,0,.08)),url('${esc(mediaImageFor(first))}')">
       <span class="news-tag">${esc(first.category)}</span>
       <time>${formatDate(first.date)}</time>
       <h3>${esc(first.title)}</h3>
@@ -57,7 +64,7 @@ function renderNews(posts) {
     <div class="news-list">
       ${rest.slice(0,4).map(post => `
         <article class="news-item">
-          <img class="news-thumb" src="${esc(supporterImageFor(post))}" alt="">
+          <img class="news-thumb" src="${esc(mediaImageFor(post))}" alt="">
           <div>
             <span class="news-tag">${esc(post.category)}</span>
             <time>${formatDate(post.date)}</time>

@@ -2,11 +2,12 @@
   "home": {
     "name": "Gigi-United",
     "logo": "assets/logo-modern.jpg",
-    "score": 4
+    "score": 1
   },
   "away": {
-    "name": "FC Maasland",
-    "logo": "assets/logo-modern.jpg",
-    "score": 1
-  }
+    "name": "Il Fenomeno",
+    "logo": "assets/belgium-flag.svg",
+    "score": 6
+  },
+  "note": "Laatste wedstrijd van het seizoen"
 }
