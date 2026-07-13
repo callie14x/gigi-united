@@ -1,0 +1,55 @@
+
+:root{--academy-gold:#d7a93f;--academy-gold-soft:#f0d58a}
+.academy-page{background:#05070a}
+.academy-hero{position:relative;min-height:520px;display:flex;align-items:end;background:url("../assets/training/training-20.jpg") center/cover no-repeat;isolation:isolate}
+.academy-hero-overlay{position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(0,0,0,.94),rgba(0,0,0,.45) 55%,rgba(0,0,0,.32)),linear-gradient(to top,rgba(0,0,0,.85),transparent)}
+.academy-hero-inner{display:flex;align-items:center;gap:38px;padding-bottom:58px}
+.academy-logo{width:210px;border-radius:14px;box-shadow:0 25px 70px rgba(0,0,0,.5)}
+.academy-hero h1{font-size:clamp(3.2rem,7vw,7rem);margin:0 0 20px}
+.academy-hero h1 span{display:block;color:var(--academy-gold)}
+.academy-eyebrow{color:var(--academy-gold);font-weight:900;text-transform:uppercase;letter-spacing:.15em;font-size:.76rem}
+.academy-info{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:-25px;position:relative;z-index:5}
+.academy-info article,.academy-panel,.academy-player{background:linear-gradient(180deg,#0d1118,#080a0e);border:1px solid rgba(215,169,63,.35);box-shadow:0 22px 55px rgba(0,0,0,.3)}
+.academy-info article{padding:24px;border-radius:10px}
+.academy-info span,.academy-info strong{display:block}
+.academy-info span{color:var(--academy-gold);text-transform:uppercase;font-size:.7rem;font-weight:900;letter-spacing:.08em;margin-bottom:8px}
+.academy-section{padding-block:70px}
+.academy-section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:24px}
+.academy-section-head h2,.academy-panel h2{margin:0;text-transform:uppercase;font-size:clamp(2rem,4vw,3.5rem)}
+.academy-player-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.academy-player{padding:18px;border-radius:9px}
+.academy-player-top{display:flex;justify-content:space-between;gap:10px;font-size:.7rem;color:var(--muted)}
+.academy-player h3{margin:14px 0 6px;text-transform:uppercase;font-size:1rem}
+.academy-player p{color:#d7d9df;font-size:.85rem;margin-bottom:8px}
+.academy-player>strong{display:block;color:var(--academy-gold-soft);font-size:.82rem;margin-bottom:12px}
+.academy-player ul{list-style:none;padding:0;margin:0;display:grid;gap:4px;color:var(--muted);font-size:.74rem}
+.academy-grid{display:grid;grid-template-columns:1.4fr .8fr;gap:18px;padding-bottom:70px}
+.academy-panel{padding:24px;border-radius:10px}
+.table-wrap{overflow-x:auto}
+.academy-table{width:100%;border-collapse:collapse;font-size:.82rem}
+.academy-table th,.academy-table td{padding:11px 12px;border-bottom:1px solid rgba(255,255,255,.08);text-align:left;white-space:nowrap}
+.academy-table th{color:var(--academy-gold);text-transform:uppercase;font-size:.68rem}
+.academy-highlight{background:linear-gradient(90deg,rgba(255,95,162,.85),rgba(255,95,162,.55));font-weight:900}
+.academy-next{text-align:center}
+.academy-next h2{font-size:1.5rem}
+.academy-vs{font-size:2rem;color:var(--academy-gold);font-weight:1000;margin:14px 0}
+.academy-countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:28px}
+.academy-countdown div{padding:14px;border:1px solid rgba(255,255,255,.1);border-radius:8px}
+.academy-countdown strong,.academy-countdown span{display:block}
+.academy-countdown strong{font-size:1.7rem;color:var(--pink)}
+.academy-countdown span{font-size:.65rem;text-transform:uppercase;color:var(--muted)}
+.academy-gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.academy-gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:8px;border:1px solid rgba(215,169,63,.28)}
+@media(max-width:1100px){
+ .academy-info{grid-template-columns:1fr 1fr}
+ .academy-player-grid{grid-template-columns:repeat(3,1fr)}
+ .academy-grid{grid-template-columns:1fr}
+ .academy-gallery{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:700px){
+ .academy-hero-inner{flex-direction:column;align-items:flex-start}
+ .academy-logo{width:150px}
+ .academy-info{grid-template-columns:1fr}
+ .academy-player-grid{grid-template-columns:1fr}
+ .academy-gallery{grid-template-columns:1fr 1fr}
+}
