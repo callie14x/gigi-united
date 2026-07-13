@@ -35,3 +35,12 @@ Definitieve jeugdacademiepagina met stafportretten, 15 spelerskaarten, Aker Cup,
 
 ## Versie 3.1
 Jeugdacademiepagina aangepast naar de definitieve goedgekeurde layout.
+
+## Versie 3.2
+Definitieve verfijningen:
+- schone banner zonder overlappende tekst;
+- trainer- en scoutfoto’s zonder ingebakken tekst;
+- één Nederlandse vlag per speler;
+- GUJA roze in het wedstrijdprogramma;
+- drie jeugdnieuwsberichten;
+- minder dubbele kaders.
