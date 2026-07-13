@@ -61,3 +61,13 @@
  .ticket-grid{grid-template-columns:1fr}
  .ticket-checkout,.ticket-heading{align-items:flex-start;flex-direction:column}
 }
+
+.ticket-match-live{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;text-align:center}
+.ticket-club img{width:92px;height:92px;object-fit:contain;border-radius:10px;margin:0 auto 8px;background:rgba(255,255,255,.03)}
+.ticket-club strong{display:block}
+.ticket-vs{font-size:1.7rem;font-weight:1000;color:#ff5fa2}
+.ticket-live-info{padding:0 22px 22px;text-align:center}
+.ticket-live-info strong,.ticket-live-info span,.ticket-live-info small{display:block}
+.ticket-live-info span{margin-top:4px;color:#d5d8de}
+.ticket-live-info small{margin-top:5px;color:#83d8ff;text-transform:uppercase}
+@media(max-width:580px){.ticket-match-live{grid-template-columns:1fr}.ticket-vs{padding:10px 0}}

@@ -110,3 +110,9 @@ De jeugdselectie wordt automatisch opgebouwd vanuit `data/jeugdspelers.json`. To
 - Gigi-United Anthem met ingebouwde MP3-speler toegevoegd.
 - Wallpaper als directe download onder Media toegevoegd.
 - Volgende wedstrijden voor jeugd, eerste elftal, homepage en tickets automatisch gekoppeld aan wedstrijddata.
+
+## Versie 7.3
+- Beheerinstructie van de zichtbare perskamerpagina verwijderd.
+- Supporterswallpaper toegevoegd met preview en downloadknop.
+- Homepage-wedstrijdkaart hersteld voor het actuele platte wedstrijdformaat, inclusief logo's.
+- Ticketpagina gekoppeld aan dezelfde eerstvolgende wedstrijd als homepage en Eerste elftal.

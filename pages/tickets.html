@@ -202,5 +202,42 @@ function launchConfetti(){
 }
 </script>
 <script src="../js/menu.js"></script>
-<script src="../js/fixtures.js"></script><script>fetch('../data/eerste-elftal-wedstrijden.json',{cache:'no-store'}).then(r=>r.json()).then(list=>{const m=GigiFixtures.nextHome(list),box=document.querySelector('#ticket-next-home');if(!m){box.innerHTML='<div class="ticket-match-label">Eerstvolgende thuiswedstrijd</div><div class="ticket-match-main"><img src="../assets/logo-2026-heden.png"><div><h2>Thuiswedstrijd wordt binnenkort bekendgemaakt</h2><p>Blue Rox Stadium · Gulpen</p></div></div>';return;}const opponent=m.away;const logo=m.awayLogo?'../'+m.awayLogo:'../assets/opponent-placeholder.svg';box.innerHTML=`<div class="ticket-match-label">Eerstvolgende thuiswedstrijd</div><div class="ticket-match-main"><img src="../assets/logo-2026-heden.png"><div><h2>Gigi-United – ${opponent}</h2><p>${GigiFixtures.formatDate(m.date)}<br>${m.location||'Blue Rox Stadium'}</p></div><img class="ticket-opponent-logo" src="${logo}" alt="${opponent}"></div>`;});</script></body>
+<script src="../js/fixtures.js"></script>
+<script>
+fetch('../data/eerste-elftal-wedstrijden.json',{cache:'no-store'})
+  .then(r=>r.json())
+  .then(list=>{
+    const m=GigiFixtures.nextFirstTeam(list);
+    const box=document.querySelector('#ticket-next-home');
+    if(!m){
+      box.innerHTML='<div class="ticket-match-label">Eerstvolgende wedstrijd</div><div class="ticket-match-main"><img src="../assets/logo-2026-heden.png"><div><h2>Wedstrijd wordt binnenkort bekendgemaakt</h2><p>Programma volgt</p></div></div>';
+      return;
+    }
+
+    const homeLogo=m.homeLogo?'../'+m.homeLogo:'../assets/opponent-placeholder.svg';
+    const awayLogo=m.awayLogo?'../'+m.awayLogo:'../assets/opponent-placeholder.svg';
+
+    box.innerHTML=`
+      <div class="ticket-match-label">Eerstvolgende wedstrijd</div>
+      <div class="ticket-match-main ticket-match-live">
+        <div class="ticket-club">
+          <img src="${homeLogo}" alt="${m.home}">
+          <strong>${m.home}</strong>
+        </div>
+        <div class="ticket-vs">VS</div>
+        <div class="ticket-club">
+          <img src="${awayLogo}" alt="${m.away}">
+          <strong>${m.away}</strong>
+        </div>
+      </div>
+      <div class="ticket-live-info">
+        <strong>${GigiFixtures.formatDate(m.date)}</strong>
+        <span>${m.location||'Locatie volgt'}</span>
+        <small>${m.competition||m.type||'Wedstrijd'}</small>
+      </div>`;
+  })
+  .catch(()=>{
+    document.querySelector('#ticket-next-home').innerHTML='<div class="ticket-match-label">Eerstvolgende wedstrijd</div><div class="ticket-match-main"><img src="../assets/logo-2026-heden.png"><div><h2>Programma kon niet worden geladen</h2><p>Probeer de pagina opnieuw te openen.</p></div></div>';
+  });
+</script></body>
 </html>

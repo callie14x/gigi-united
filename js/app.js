@@ -65,19 +65,30 @@ function renderNews(posts) {
 }
 function renderNextMatch(match) {
   const card = document.querySelector('#next-match-card');
-  if (!match) { card.innerHTML='<h2>Volgende wedstrijd</h2><p class="match-competition">Programma volgt</p><p>De volgende officiële wedstrijd is nog niet bekend.</p>'; return; }
+  if (!match) {
+    card.innerHTML='<h2>Volgende wedstrijd</h2><p class="match-competition">Programma volgt</p><p>De volgende officiële wedstrijd is nog niet bekend.</p>';
+    return;
+  }
+
+  const homeName = match.home?.name || match.home || '';
+  const awayName = match.away?.name || match.away || '';
+  const homeLogo = match.home?.logo || match.homeLogo || 'assets/opponent-placeholder.svg';
+  const awayLogo = match.away?.logo || match.awayLogo || 'assets/opponent-placeholder.svg';
+  const competition = match.competition || match.type || 'Wedstrijd';
+  const round = match.round ? ` · ${match.round}` : '';
+
   card.innerHTML = `
     <h2>Volgende wedstrijd</h2>
-    <p class="match-competition">${esc(match.competition)} · ${esc(match.round)}</p>
+    <p class="match-competition">${esc(competition)}${esc(round)}</p>
     <div class="match-teams">
       <div class="match-team">
-        <img src="${esc(match.home.logo)}" alt="">
-        <strong>${esc(match.home.name)}</strong>
+        <img src="${esc(homeLogo)}" alt="${esc(homeName)}">
+        <strong>${esc(homeName)}</strong>
       </div>
       <div class="match-vs">VS</div>
       <div class="match-team">
-        <img src="${esc(match.away.logo)}" alt="">
-        <strong>${esc(match.away.name)}</strong>
+        <img src="${esc(awayLogo)}" alt="${esc(awayName)}">
+        <strong>${esc(awayName)}</strong>
       </div>
     </div>
     <div class="countdown">
@@ -86,7 +97,7 @@ function renderNextMatch(match) {
       <div><strong id="cd-minutes">00</strong><span>Min</span></div>
       <div><strong id="cd-seconds">00</strong><span>Sec</span></div>
     </div>
-    <p class="match-date">${formatDateTime(match.date)}<br>${esc(match.location)}</p>
+    <p class="match-date">${formatDateTime(match.date)}<br>${esc(match.location || '')}</p>
   `;
   startCountdown(match.date);
 }
