@@ -1,0 +1,129 @@
+
+:root{--gold:#d5a63d;--gold2:#f0ce74;--pink:#ff5fa2;--blue:#83d8ff}
+.academy-v31{background:#030506;color:#f7f7f5}
+.academy-v31 .topbar{min-height:50px;padding-top:6px;padding-bottom:6px}
+.academy-v31 .brand img{width:54px;height:54px}
+.v31-hero{position:relative;min-height:175px;background:url("../assets/academy/v32/hero-campus-clean.jpg") center/cover no-repeat;isolation:isolate}
+.v31-hero-shade{position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(0,0,0,.92),rgba(0,0,0,.35) 60%,rgba(0,0,0,.12))}
+.v31-hero-content{width:min(1500px,96%);margin:auto;display:flex;align-items:center;gap:28px;padding:20px 0}
+.v31-logo{width:120px;border-radius:10px}
+.v31-hero h1{font-size:clamp(2.6rem,5.5vw,5.8rem);line-height:.82;margin:0;text-transform:uppercase}
+.v31-hero h1 span{color:var(--gold)}
+.v31-hero p{margin:12px 0 0;font-size:1.25rem;text-transform:uppercase;letter-spacing:.05em}
+.v31-top-grid{display:grid;grid-template-columns:1.1fr 2.6fr 1.65fr .8fr .8fr 1.15fr;gap:6px;margin-top:8px}
+.v31-box,.v31-panel{background:linear-gradient(180deg,#090d12,#040608);border:1px solid rgba(213,166,61,.65);border-radius:6px}
+.v31-box{padding:10px}
+.v31-box h2,.v31-panel-title h2{margin:0;color:var(--gold);text-transform:uppercase;font-size:.88rem}
+.v31-coach img{width:100%;height:135px;object-fit:cover;border-radius:5px;margin:8px 0}
+.v31-coach strong,.v31-scout-grid strong,.v31-competition strong,.v31-founded strong{display:block;text-align:center;font-size:.78rem}
+.v31-scout-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:8px}
+.v31-scout-grid img{width:100%;height:135px;object-fit:cover;border-radius:5px;margin-bottom:5px}
+.v31-scout-grid strong{font-size:.72rem}
+.v31-campus img{width:100%;height:138px;object-fit:cover;border-radius:5px;margin-top:8px}
+.v31-competition,.v31-founded{text-align:center}
+.v31-cup{width:92px;height:92px;border:3px solid var(--gold);border-radius:50%;display:grid;place-items:center;margin:16px auto 8px;font-size:1.2rem;font-weight:1000;color:var(--gold)}
+.v31-cup small{display:block;font-size:.5rem}
+.v31-calendar{font-size:4.6rem;color:var(--pink);line-height:1.1;margin:10px 0}
+.v31-philosophy p{font-size:.72rem;color:#d9dbe0}
+.v31-philosophy ul{margin:8px 0 0;padding-left:20px;color:#e5e7eb;font-size:.78rem;display:grid;gap:6px}
+.v31-main-grid{display:grid;grid-template-columns:1.4fr .85fr 1.15fr;gap:6px;margin-top:6px;margin-bottom:30px}
+.v31-panel{overflow:hidden}
+.v31-panel-title{padding:8px 12px;border-bottom:1px solid rgba(255,255,255,.08)}
+.v31-panel-title h2 span{color:#e5e7eb;font-size:.72rem}
+.v31-player-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;padding:6px}
+.v31-player{position:relative;background:#070a0e;border:1px solid rgba(213,166,61,.5);border-radius:5px;overflow:hidden}
+.v31-player img{width:100%;height:110px;object-fit:cover}
+.v31-player h3{margin:6px;text-align:center;text-transform:uppercase;font-size:.68rem}
+.v31-flag{position:absolute;left:5px;top:5px;z-index:2;font-size:.8rem}
+.v31-youth-news{border-top:1px solid rgba(213,166,61,.45);padding:8px}
+.v31-youth-news>h2{color:var(--gold);text-transform:uppercase;font-size:.88rem;margin:0 0 7px}
+.v31-news-row{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.v31-news-row article{display:grid;grid-template-columns:70px 1fr;gap:6px;font-size:.62rem}
+.v31-news-row img{width:70px;height:70px;object-fit:cover;border-radius:4px}
+.v31-news-row strong,.v31-news-row span{display:block}
+.v31-news-row span{color:var(--gold);margin-top:4px}
+.v31-center-stack,.v31-right-stack{display:grid;gap:6px;align-content:start}
+.v31-table-wrap{overflow-x:auto}
+.v31-table{width:100%;border-collapse:collapse;font-size:.62rem}
+.v31-table th,.v31-table td{padding:5px 6px;border-bottom:1px solid rgba(255,255,255,.06);text-align:left;white-space:nowrap}
+.v31-table th{color:var(--gold);text-transform:uppercase}
+.v31-highlight{background:linear-gradient(90deg,rgba(255,95,162,.8),rgba(255,95,162,.35));font-weight:900}
+.v31-next{text-align:center;padding-bottom:12px}
+.v31-match{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:10px;padding:10px 18px 2px}
+.v31-match img{width:85px;margin:auto;border-radius:7px}
+.v31-match>strong{font-size:1.5rem;color:var(--gold)}
+.v31-usc{border:2px solid white;border-radius:6px;padding:9px;font-weight:1000;font-size:1.1rem}
+.v31-usc small{display:block;font-size:.48rem}
+.v31-next p{margin:5px 0}
+.v31-next h3{margin:0;color:var(--gold);text-transform:uppercase;font-size:.88rem}
+.v31-countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;padding:12px}
+.v31-countdown div{border-top:1px solid rgba(255,255,255,.1);padding-top:10px}
+.v31-countdown strong,.v31-countdown span{display:block}
+.v31-countdown strong{font-size:1.55rem;color:var(--pink)}
+.v31-countdown span{font-size:.55rem;text-transform:uppercase;color:#c5c9d0}
+.v31-fixtures{font-size:.6rem}
+.v31-gallery{display:grid;grid-template-columns:repeat(6,1fr);gap:5px;padding:7px}
+.v31-gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;border:1px solid rgba(213,166,61,.35)}
+@media(max-width:1200px){
+ .v31-top-grid{grid-template-columns:1fr 2fr 1fr}
+ .v31-main-grid{grid-template-columns:1fr}
+}
+@media(max-width:720px){
+ .v31-hero-content{flex-direction:column;align-items:flex-start}
+ .v31-top-grid{grid-template-columns:1fr}
+ .v31-scout-grid{grid-template-columns:1fr}
+ .v31-player-grid{grid-template-columns:repeat(2,1fr)}
+ .v31-news-row{grid-template-columns:1fr}
+ .v31-gallery{grid-template-columns:repeat(2,1fr)}
+}
+
+/* v3.2 refinements */
+.v31-hero{
+  min-height:156px;
+  background-position:center center;
+}
+.v31-hero-shade{
+  background:linear-gradient(90deg,rgba(0,0,0,.22),rgba(0,0,0,.05));
+}
+.v31-hero-content{
+  min-height:156px;
+  padding:0;
+}
+.v31-logo,
+.v31-hero-content h1,
+.v31-hero-content p{
+  display:none;
+}
+
+/* One clean outer frame, no frame-within-frame effect. */
+.v31-box img,
+.v31-player img,
+.v31-news-row img,
+.v31-gallery img{
+  border:0;
+  box-shadow:none;
+}
+.v31-coach img,
+.v31-scout-grid img,
+.v31-campus img{
+  margin-left:0;
+  margin-right:0;
+}
+.v31-player{
+  border:1px solid rgba(213,166,61,.55);
+}
+.v31-player img{
+  height:110px;
+  object-fit:cover;
+}
+
+/* GUJA stands out immediately in the fixture list. */
+.guja{
+  color:var(--pink);
+  font-weight:900;
+}
+
+/* Three youth-news items for a calmer layout. */
+.v31-news-row{
+  grid-template-columns:repeat(3,1fr);
+}

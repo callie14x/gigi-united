@@ -1,0 +1,226 @@
+{
+  "trainer": "Riny Breedveld",
+  "scouts": [
+    "Floris-Jan Damhuis",
+    "Patricio Soeteman",
+    "Fabio van der Rhoer"
+  ],
+  "complex": "Gulpener Talent Campus",
+  "competition": "Aker Cup",
+  "players": [
+    {
+      "name": "Allard Odijk",
+      "age": "16 jaar en 101 dagen",
+      "promotion_days": 111
+    },
+    {
+      "name": "Augustus Hofland",
+      "age": "15 jaar en 67 dagen",
+      "promotion_days": 157
+    },
+    {
+      "name": "Bayna El Aynaoui",
+      "age": "15 jaar en 58 dagen",
+      "promotion_days": 166
+    },
+    {
+      "name": "Berry Bergboer",
+      "age": "16 jaar en 17 dagen",
+      "promotion_days": 111
+    },
+    {
+      "name": "Borger te Vrede",
+      "age": "15 jaar en 11 dagen",
+      "promotion_days": 213
+    },
+    {
+      "name": "Bryan de Wind",
+      "age": "16 jaar en 36 dagen",
+      "promotion_days": 111
+    },
+    {
+      "name": "Eric Meents",
+      "age": "15 jaar en 6 dagen",
+      "promotion_days": 218
+    },
+    {
+      "name": "Harry Lambooij",
+      "age": "15 jaar en 55 dagen",
+      "promotion_days": 169
+    },
+    {
+      "name": "Jort Ekster",
+      "age": "15 jaar en 59 dagen",
+      "promotion_days": 165
+    },
+    {
+      "name": "Kris van Grunsven",
+      "age": "15 jaar en 47 dagen",
+      "promotion_days": 177
+    },
+    {
+      "name": "Levent İsmail",
+      "age": "15 jaar en 45 dagen",
+      "promotion_days": 179
+    },
+    {
+      "name": "Merlijn ten Haken",
+      "age": "16 jaar en 40 dagen",
+      "promotion_days": 111
+    },
+    {
+      "name": "Micha Hemker",
+      "age": "16 jaar en 38 dagen",
+      "promotion_days": 111
+    },
+    {
+      "name": "Mustafa Cem Övün",
+      "age": "16 jaar en 83 dagen",
+      "promotion_days": 111
+    },
+    {
+      "name": "Wolter Knoester",
+      "age": "15 jaar en 76 dagen",
+      "promotion_days": 148
+    }
+  ],
+  "standings": [
+    "Jong HFC",
+    "Gigi-United Jeugdacademie",
+    "Brommelkids",
+    "USC Youngsters",
+    "Burggooy Academy",
+    "AkerJeugd",
+    "Hans Worst",
+    "The Youth Armie"
+  ],
+  "fixtures": [
+    {
+      "date": "14-07-2026",
+      "time": "04:23",
+      "type": "Vriendschappelijk",
+      "home": "Jong Oldskooll United",
+      "away": "Gigi-United Jeugdacademie"
+    },
+    {
+      "date": "15-07-2026",
+      "time": "15:05",
+      "type": "Jeugdcompetitie",
+      "home": "Gigi-United Jeugdacademie",
+      "away": "USC Youngsters"
+    },
+    {
+      "date": "22-07-2026",
+      "time": "15:05",
+      "type": "Jeugdcompetitie",
+      "home": "Burggooy Academy",
+      "away": "Gigi-United Jeugdacademie"
+    },
+    {
+      "date": "29-07-2026",
+      "time": "15:05",
+      "type": "Jeugdcompetitie",
+      "home": "Gigi-United Jeugdacademie",
+      "away": "Brommelkids"
+    },
+    {
+      "date": "05-08-2026",
+      "time": "15:05",
+      "type": "Jeugdcompetitie",
+      "home": "The Youth Armie",
+      "away": "Gigi-United Jeugdacademie"
+    },
+    {
+      "date": "12-08-2026",
+      "time": "15:05",
+      "type": "Jeugdcompetitie",
+      "home": "Gigi-United Jeugdacademie",
+      "away": "Jong HFC"
+    },
+    {
+      "date": "19-08-2026",
+      "time": "15:05",
+      "type": "Jeugdcompetitie",
+      "home": "AkerJeugd",
+      "away": "Gigi-United Jeugdacademie"
+    },
+    {
+      "date": "26-08-2026",
+      "time": "15:05",
+      "type": "Jeugdcompetitie",
+      "home": "Gigi-United Jeugdacademie",
+      "away": "Hans Worst"
+    },
+    {
+      "date": "02-09-2026",
+      "time": "15:05",
+      "type": "Jeugdcompetitie",
+      "home": "Hans Worst",
+      "away": "Gigi-United Jeugdacademie"
+    },
+    {
+      "date": "09-09-2026",
+      "time": "15:05",
+      "type": "Jeugdcompetitie",
+      "home": "Gigi-United Jeugdacademie",
+      "away": "AkerJeugd"
+    },
+    {
+      "date": "16-09-2026",
+      "time": "15:05",
+      "type": "Jeugdcompetitie",
+      "home": "Jong HFC",
+      "away": "Gigi-United Jeugdacademie"
+    },
+    {
+      "date": "23-09-2026",
+      "time": "15:05",
+      "type": "Jeugdcompetitie",
+      "home": "Gigi-United Jeugdacademie",
+      "away": "The Youth Armie"
+    },
+    {
+      "date": "30-09-2026",
+      "time": "15:05",
+      "type": "Jeugdcompetitie",
+      "home": "Brommelkids",
+      "away": "Gigi-United Jeugdacademie"
+    },
+    {
+      "date": "07-10-2026",
+      "time": "15:05",
+      "type": "Jeugdcompetitie",
+      "home": "Gigi-United Jeugdacademie",
+      "away": "Burggooy Academy"
+    },
+    {
+      "date": "14-10-2026",
+      "time": "15:05",
+      "type": "Jeugdcompetitie",
+      "home": "USC Youngsters",
+      "away": "Gigi-United Jeugdacademie"
+    }
+  ],
+  "gallery": [
+    "assets/academy/gallery/academy-01.jpg",
+    "assets/academy/gallery/academy-02.jpg",
+    "assets/academy/gallery/academy-03.jpg",
+    "assets/academy/gallery/academy-04.jpg",
+    "assets/academy/gallery/academy-05.jpg",
+    "assets/academy/gallery/academy-06.jpg",
+    "assets/academy/gallery/academy-07.jpg",
+    "assets/academy/gallery/academy-08.jpg",
+    "assets/academy/gallery/academy-09.jpg",
+    "assets/academy/gallery/academy-10.jpg",
+    "assets/academy/gallery/academy-11.jpg",
+    "assets/academy/gallery/academy-12.jpg",
+    "assets/academy/gallery/academy-13.jpg",
+    "assets/academy/gallery/academy-14.jpg",
+    "assets/academy/gallery/academy-15.jpg",
+    "assets/academy/gallery/academy-16.jpg",
+    "assets/academy/gallery/academy-17.jpg",
+    "assets/academy/gallery/academy-18.jpg",
+    "assets/academy/gallery/academy-19.jpg",
+    "assets/academy/gallery/academy-20.jpg"
+  ]
+}

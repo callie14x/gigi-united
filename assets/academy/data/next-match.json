@@ -1,0 +1,14 @@
+{
+  "competition": "Oefenwedstrijd",
+  "round": "Internationaal",
+  "date": "2026-07-14T18:30:00+02:00",
+  "location": "DC Erlbach Arena",
+  "home": {
+    "name": "DC Erlbach 09",
+    "logo": "assets/dc-erlbach09-logo.jpeg"
+  },
+  "away": {
+    "name": "Gigi-United",
+    "logo": "assets/logo-modern.jpg"
+  }
+}
