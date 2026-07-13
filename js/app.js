@@ -50,7 +50,7 @@ function mediaImageFor(post) {
 }
 
 function renderNews(posts) {
-  const sorted = [...posts].sort((a,b) => new Date(b.date) - new Date(a.date)).slice(0,3);
+  const sorted = [...posts].sort((a,b) => new Date(b.date) - new Date(a.date)).slice(0,4);
   const [first, ...rest] = sorted;
   const container = document.querySelector('#news-grid');
   if (!first) return;

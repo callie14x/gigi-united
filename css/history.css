@@ -42,3 +42,5 @@
   .timeline-year{text-align:left}
   .logo-history-grid{grid-template-columns:1fr}
 }
+
+.milestone-list{display:grid;gap:14px}.milestone-list>div{padding:16px;border-left:3px solid #ff5fa2;background:rgba(255,255,255,.025)}.milestone-list time,.milestone-list strong{display:block}.milestone-list time{color:#83d8ff;font-size:.72rem;font-weight:900;text-transform:uppercase}.milestone-list strong{margin:4px 0;font-size:1rem}.milestone-list p{margin:0}.shirt-history{padding:90px 0;background:#05070a}.shirt-era-grid{display:grid;gap:22px}.shirt-era{display:grid;grid-template-columns:1.35fr .65fr;gap:28px;align-items:center;padding:24px;border:1px solid rgba(255,255,255,.11);border-radius:14px;background:linear-gradient(180deg,#0d1118,#080a0e)}.shirt-era.current{border-color:rgba(255,95,162,.45)}.shirt-era img{width:100%;border-radius:10px}.shirt-era span{color:#83d8ff;font-size:.72rem;font-weight:900;text-transform:uppercase;letter-spacing:.12em}.shirt-era h3{margin:6px 0 14px;font-size:2rem;text-transform:uppercase}.shirt-era ul{padding-left:20px;color:#e1e4e8}.shirt-era p{color:#aeb2bd}@media(max-width:850px){.shirt-era{grid-template-columns:1fr}}

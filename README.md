@@ -61,7 +61,7 @@ Fictieve Fanshop toegevoegd met twintig producten, prijzen, een supporterspakket
 
 ## Versie 4.1
 - Fictief ticketportaal toegevoegd voor Blue Rox Stadium (12.000 plaatsen).
-- Reserveren leidt tot een uitverkocht-melding met Rossoneri-grap en confetti.
+- Reserveren leidt tot een uitverkocht-melding met Rossoneri ◢◤-grap en confetti.
 - Jeugdspelers worden zonder foto's weergegeven als draaiende thuisshirts met fictieve rugnummers.
 
 ## Versie 5.0
@@ -74,7 +74,7 @@ De jeugdselectie wordt automatisch opgebouwd vanuit `data/jeugdspelers.json`. To
 - Ieder artikel opent op een eigen dynamische artikelpagina met tekst en galerij.
 - Club-, Supporters- en Media-hubs toegevoegd.
 - GIGI TV valt onder Media.
-- Clubhistorie, Museum, Hall of Fame, Records, Stadion, Rossoneri, Wallpapers, Perskamer, Match Center en downloads staan klaar als Under Construction-pagina’s.
+- Clubhistorie, Museum, Hall of Fame, Records, Stadion, Rossoneri ◢◤, Wallpapers, Perskamer, Match Center en downloads staan klaar als Under Construction-pagina’s.
 
 ## Versie 6.1
 - Oprichtingsdatum gecorrigeerd naar 28 november 2004.
@@ -82,3 +82,14 @@ De jeugdselectie wordt automatisch opgebouwd vanuit `data/jeugdspelers.json`. To
 - De jeugdacademie blijft opgericht in 2026.
 - Volledige interactieve clubhistorie en tijdlijn toegevoegd.
 - Logo-overzicht toegevoegd voor 2004-2024, 2024-2026 en 2026-heden.
+
+
+## Versie 7.0
+- Homepage toont automatisch de vier nieuwste nieuwsberichten.
+- Harde kern heet overal Rossoneri ◢◤.
+- Media vereenvoudigd naar Perskamer en Media Downloads.
+- GIGI TV, Match Center en Fotogalerij verwijderd.
+- Records & Erelijst samengevoegd met Hall of Fame.
+- Clubhistorie uitgebreid met alle bekende promoties, kampioenschappen en degradatie.
+- Historische en huidige shirtcollages toegevoegd.
+- Museum voorzien van een duidelijke toekomstige invulling.
