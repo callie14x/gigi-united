@@ -18,13 +18,13 @@ function esc(value='') {
 async function loadData() {
   const [news, match, result, standings] = await Promise.all([
     fetch('data/news.json').then(r => r.json()),
-    fetch('data/next-match.json').then(r => r.json()),
+    fetch('data/eerste-elftal-wedstrijden.json').then(r => r.json()),
     fetch('data/last-result.json').then(r => r.json()),
     fetch('data/standings.json').then(r => r.json())
   ]);
 
   renderNews(news);
-  renderNextMatch(match);
+  renderNextMatch(window.GigiFixtures.nextFirstTeam(match));
   renderLastResult(result);
   renderStandings(standings);
 }
@@ -65,6 +65,7 @@ function renderNews(posts) {
 }
 function renderNextMatch(match) {
   const card = document.querySelector('#next-match-card');
+  if (!match) { card.innerHTML='<h2>Volgende wedstrijd</h2><p class="match-competition">Programma volgt</p><p>De volgende officiële wedstrijd is nog niet bekend.</p>'; return; }
   card.innerHTML = `
     <h2>Volgende wedstrijd</h2>
     <p class="match-competition">${esc(match.competition)} · ${esc(match.round)}</p>

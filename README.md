@@ -93,3 +93,20 @@ De jeugdselectie wordt automatisch opgebouwd vanuit `data/jeugdspelers.json`. To
 - Clubhistorie uitgebreid met alle bekende promoties, kampioenschappen en degradatie.
 - Historische en huidige shirtcollages toegevoegd.
 - Museum voorzien van een duidelijke toekomstige invulling.
+
+
+## Versie 7.1
+- #TrotsOpGulpen overal vervangen door #GigiUnited.
+- Kampioensiconen toegevoegd aan de titels in Hall of Fame.
+- Blue Rox Stadium volledig gevuld met historie en stadiongegevens.
+- Museum vernieuwd met aparte pagina's voor historische shirts, memorabilia en stadionarchief.
+- Kampioenszaal als losse museumtegel verwijderd.
+
+
+## Versie 7.2
+- Testbericht en eenvoudig JSON-beheer toegevoegd aan de Perskamer.
+- Rossoneri ◢◤-pagina volledig gevuld en ledenstand data-gestuurd gemaakt.
+- Fanfoto-tegel verwijderd.
+- Gigi-United Anthem met ingebouwde MP3-speler toegevoegd.
+- Wallpaper als directe download onder Media toegevoegd.
+- Volgende wedstrijden voor jeugd, eerste elftal, homepage en tickets automatisch gekoppeld aan wedstrijddata.

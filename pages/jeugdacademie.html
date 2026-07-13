@@ -119,22 +119,7 @@
       </div>
     </section>
 
-    <section class="v31-panel v31-next">
-      <div class="v31-panel-title"><h2>Eerstvolgende wedstrijd</h2></div>
-      <div class="v31-match">
-        <img src="../assets/academy/academy-logo.jpeg" alt="">
-        <strong>VS</strong>
-        <div class="v31-usc">USC<small>Youngsters</small></div>
-      </div>
-      <p>15 juli 2026</p>
-      <h3>Gulpener Talent Campus</h3>
-      <div class="v31-countdown" data-target="2026-07-15T15:05:00+02:00">
-        <div><strong data-days>00</strong><span>Dagen</span></div>
-        <div><strong data-hours>00</strong><span>Uren</span></div>
-        <div><strong data-minutes>00</strong><span>Minuten</span></div>
-        <div><strong data-seconds>00</strong><span>Seconden</span></div>
-      </div>
-    </section>
+    <section class="v31-panel v31-next" id="academy-next-match"></section>
   </div>
 
   <div class="v31-right-stack">
@@ -188,22 +173,6 @@
 
 <script src="../js/app.js"></script>
 <script>
-const box=document.querySelector('.v31-countdown');
-if(box){
- const target=new Date(box.dataset.target).getTime();
- const tick=()=>{
-  let d=Math.max(0,target-Date.now());
-  const days=Math.floor(d/86400000); d%=86400000;
-  const hours=Math.floor(d/3600000); d%=3600000;
-  const minutes=Math.floor(d/60000); d%=60000;
-  const seconds=Math.floor(d/1000);
-  box.querySelector('[data-days]').textContent=String(days).padStart(2,'0');
-  box.querySelector('[data-hours]').textContent=String(hours).padStart(2,'0');
-  box.querySelector('[data-minutes]').textContent=String(minutes).padStart(2,'0');
-  box.querySelector('[data-seconds]').textContent=String(seconds).padStart(2,'0');
- };
- tick(); setInterval(tick,1000);
-}
 </script>
 
 <script>
@@ -270,5 +239,14 @@ laadJeugdspelers();
 </script>
 
 <script src="../js/menu.js"></script>
-</body>
+<script src="../js/fixtures.js"></script><script>
+fetch('../data/academy.json',{cache:'no-store'}).then(r=>r.json()).then(data=>{
+ const fixtures=(data.fixtures||[]).map(m=>{const [d,mo,y]=m.date.split('-');return {...m,date:`${y}-${mo}-${d}T${m.time}:00+02:00`}});
+ const m=GigiFixtures.nextYouthCompetition(fixtures), box=document.querySelector('#academy-next-match');
+ if(!m){box.innerHTML='<div class="v31-panel-title"><h2>Eerstvolgende wedstrijd</h2></div><p>Het volgende competitieduel is nog niet bekend.</p>';return;}
+ const club='Gigi-United Jeugdacademie'; const opponent=m.home===club?m.away:m.home;
+ box.innerHTML=`<div class="v31-panel-title"><h2>Eerstvolgende wedstrijd</h2></div><div class="v31-match"><img src="../assets/academy/academy-logo.jpeg" alt=""><strong>VS</strong><div class="v31-usc">${opponent}<small>${m.home===club?'Thuis':'Uit'}</small></div></div><p>${GigiFixtures.formatDate(m.date)}</p><h3>${m.home===club?'Gulpener Talent Campus':'Uitwedstrijd'}</h3><div class="v31-countdown"><div><strong data-days>00</strong><span>Dagen</span></div><div><strong data-hours>00</strong><span>Uren</span></div><div><strong data-minutes>00</strong><span>Minuten</span></div><div><strong data-seconds>00</strong><span>Seconden</span></div></div>`;
+ GigiFixtures.startCountdown(m.date,box);
+});
+</script></body>
 </html>

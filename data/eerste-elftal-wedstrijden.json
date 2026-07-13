@@ -1,0 +1,12 @@
+[
+  {
+    "date": "2026-07-14T18:30:00+02:00",
+    "type": "Oefenwedstrijd",
+    "competition": "Internationaal oefenduel",
+    "home": "DC Erlbach 09",
+    "away": "Gigi-United",
+    "location": "DC Erlbach Arena",
+    "homeLogo": "assets/dc-erlbach09-logo.jpeg",
+    "awayLogo": "assets/logo-2026-heden.png"
+  }
+]
