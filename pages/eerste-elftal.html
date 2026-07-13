@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Alles over het eerste elftal van Gigi-United.">
+  <title>Gigi-United | Eerste elftal</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/eerste-elftal.css">
+</head>
+<body class="first-team-page">
+<header class="topbar">
+  <a class="brand" href="../index.html">
+    <img src="../assets/logo-modern.jpg" alt="Gigi-United">
+    <div><strong>GIGI-UNITED</strong><span>Gulpen · Est. 2024</span></div>
+  </a>
+  <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+  <nav id="main-nav" class="main-nav">
+    <a href="../index.html">Home</a>
+    <a href="../index.html#nieuws">Nieuws</a>
+    <a class="active" href="eerste-elftal.html">Eerste elftal</a>
+    <a href="jeugdacademie.html">Jeugdacademie</a>
+    <a href="club.html">Club</a>
+    <a href="../index.html#stadion">Stadion</a>
+    <a href="fans.html">Fans</a>
+    <a href="media.html">Media</a>
+  </nav>
+</header>
+
+<main>
+  <section class="first-hero">
+    <div class="first-hero-overlay"></div>
+    <div class="first-hero-content shell">
+      <img src="../assets/logo-modern.jpg" alt="Logo Gigi-United">
+      <div>
+        <p class="first-kicker">Gigi-United</p>
+        <h1>Eerste elftal</h1>
+        <p>Wedstrijden, selectie, resultaten en alles rondom de hoofdmacht op één plek.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="first-overview shell">
+    <article class="first-card">
+      <span>Competitie</span>
+      <strong>VI.997</strong>
+      <small>Nederland</small>
+    </article>
+    <article class="first-card">
+      <span>Thuisbasis</span>
+      <strong>Blue Rox Stadium</strong>
+      <small>12.000 plaatsen</small>
+    </article>
+    <article class="first-card">
+      <span>Supporters</span>
+      <strong>Rossoneri</strong>
+      <small>Passie. Trots. Samen.</small>
+    </article>
+    <article class="first-card">
+      <span>Opgericht</span>
+      <strong>2024</strong>
+      <small>Gulpen</small>
+    </article>
+  </section>
+
+  <section class="first-dashboard shell">
+    <section class="first-panel first-next">
+      <div class="first-panel-head">
+        <div><p class="first-kicker">Internationaal oefenduel</p><h2>Volgende wedstrijd</h2></div>
+      </div>
+      <div class="first-match">
+        <div class="first-club">
+          <img src="../assets/dc-erlbach09-logo.jpeg" alt="DC Erlbach 09">
+          <strong>DC Erlbach 09</strong>
+        </div>
+        <div class="first-vs">VS</div>
+        <div class="first-club">
+          <img src="../assets/logo-modern.jpg" alt="Gigi-United">
+          <strong>Gigi-United</strong>
+        </div>
+      </div>
+      <p class="first-match-info">Dinsdag 14 juli 2026 · 18:30 uur<br><strong>DC Erlbach Arena</strong></p>
+      <div class="first-countdown" data-target="2026-07-14T18:30:00+02:00">
+        <div><strong data-days>00</strong><span>Dagen</span></div>
+        <div><strong data-hours>00</strong><span>Uren</span></div>
+        <div><strong data-minutes>00</strong><span>Minuten</span></div>
+        <div><strong data-seconds>00</strong><span>Seconden</span></div>
+      </div>
+    </section>
+
+    <section class="first-panel">
+      <div class="first-panel-head">
+        <div><p class="first-kicker">Seizoensslot</p><h2>Laatste wedstrijd</h2></div>
+      </div>
+      <div class="first-result">
+        <div>
+          <img src="../assets/logo-modern.jpg" alt="">
+          <strong>Gigi-United</strong>
+        </div>
+        <span>1–6</span>
+        <div>
+          <img src="../assets/belgium-flag.svg" alt="Belgische vlag">
+          <strong>Il Fenomeno</strong>
+        </div>
+      </div>
+      <p>Laatste wedstrijd van het seizoen.</p>
+    </section>
+
+    <section class="first-panel">
+      <div class="first-panel-head">
+        <div><p class="first-kicker">Nieuwe jaargang</p><h2>Competitie</h2></div>
+      </div>
+      <div class="first-empty">
+        <strong>Competitie-indeling volgt</strong>
+        <p>De namen van de overige teams zijn nog niet bekend.</p>
+      </div>
+    </section>
+
+    <section class="first-panel first-squad">
+      <div class="first-panel-head">
+        <div><p class="first-kicker">De hoofdmacht</p><h2>Selectie</h2></div>
+      </div>
+      <div class="first-empty">
+        <strong>Selectie wordt toegevoegd</strong>
+        <p>Spelersprofielen, posities en statistieken komen hier samen zodra de selectiegegevens zijn ingevoerd.</p>
+      </div>
+    </section>
+  </section>
+
+  <section class="first-links shell">
+    <a href="../index.html#nieuws"><span>Clubnieuws</span><strong>Lees het laatste nieuws →</strong></a>
+    <a href="../index.html#stadion"><span>Blue Rox Stadium</span><strong>Ontdek onze thuisbasis →</strong></a>
+    <a href="fans.html"><span>Rossoneri</span><strong>Naar onze supporters →</strong></a>
+  </section>
+</main>
+
+<footer>
+  <img src="../assets/logo-modern.jpg" alt="">
+  <div><strong>Gigi-United · Eerste elftal</strong><span>Blue Rox Stadium · VI.997</span></div>
+</footer>
+
+<script>
+const menuButton=document.querySelector('.menu-toggle');
+const nav=document.querySelector('.main-nav');
+menuButton?.addEventListener('click',()=>{
+  const open=nav.classList.toggle('open');
+  menuButton.setAttribute('aria-expanded',String(open));
+});
+const box=document.querySelector('.first-countdown');
+if(box){
+  const target=new Date(box.dataset.target).getTime();
+  const tick=()=>{
+    let d=Math.max(0,target-Date.now());
+    const days=Math.floor(d/86400000); d%=86400000;
+    const hours=Math.floor(d/3600000); d%=3600000;
+    const minutes=Math.floor(d/60000); d%=60000;
+    const seconds=Math.floor(d/1000);
+    box.querySelector('[data-days]').textContent=String(days).padStart(2,'0');
+    box.querySelector('[data-hours]').textContent=String(hours).padStart(2,'0');
+    box.querySelector('[data-minutes]').textContent=String(minutes).padStart(2,'0');
+    box.querySelector('[data-seconds]').textContent=String(seconds).padStart(2,'0');
+  };
+  tick(); setInterval(tick,1000);
+}
+</script>
+</body>
+</html>

@@ -44,3 +44,7 @@ Definitieve verfijningen:
 - GUJA roze in het wedstrijdprogramma;
 - drie jeugdnieuwsberichten;
 - minder dubbele kaders.
+
+
+## Versie 3.3
+Navigatie vereenvoudigd: Wedstrijden en Selectie zijn samengevoegd onder één nieuwe pagina: Eerste elftal.
