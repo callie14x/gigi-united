@@ -48,3 +48,6 @@ Definitieve verfijningen:
 
 ## Versie 3.3
 Navigatie vereenvoudigd: Wedstrijden en Selectie zijn samengevoegd onder één nieuwe pagina: Eerste elftal.
+
+## Versie 3.4
+Selectie van het eerste elftal toegevoegd, verdeeld over keepers, verdedigers, middenvelders en aanvallers. Per speler worden naam, leeftijd en nationaliteit getoond.

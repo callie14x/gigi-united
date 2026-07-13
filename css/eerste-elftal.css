@@ -52,3 +52,80 @@
   .first-match,.first-result{grid-template-columns:1fr}
   .first-countdown{grid-template-columns:1fr 1fr}
 }
+
+.first-squad-content{
+  display:grid;
+  gap:24px;
+  padding:24px;
+}
+.squad-group{
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:10px;
+  overflow:hidden;
+  background:rgba(255,255,255,.015);
+}
+.squad-group-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:18px;
+  padding:14px 18px;
+  border-bottom:1px solid rgba(255,255,255,.08);
+  background:linear-gradient(90deg,rgba(255,95,162,.10),rgba(131,216,255,.06));
+}
+.squad-group-head h3{
+  margin:0;
+  color:#f7f7f5;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+}
+.squad-group-head span{
+  color:#83d8ff;
+  font-size:.72rem;
+  font-weight:900;
+  text-transform:uppercase;
+}
+.squad-player-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:12px;
+  padding:14px;
+}
+.squad-player-card{
+  position:relative;
+  min-height:138px;
+  padding:20px 16px 16px;
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:8px;
+  background:linear-gradient(180deg,#0b0f15,#07090d);
+}
+.squad-player-flag{
+  position:absolute;
+  top:12px;
+  right:12px;
+  font-size:1.2rem;
+}
+.squad-player-card h3{
+  max-width:85%;
+  margin:0 0 16px;
+  font-size:1rem;
+  line-height:1.15;
+}
+.squad-player-card p{
+  margin:0 0 5px;
+  color:#d6d9df;
+  font-size:.86rem;
+}
+.squad-player-card span{
+  color:#ff91c8;
+  font-size:.74rem;
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:.06em;
+}
+@media(max-width:1000px){
+  .squad-player-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:620px){
+  .squad-player-grid{grid-template-columns:1fr}
+}
