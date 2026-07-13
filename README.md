@@ -63,3 +63,6 @@ Fictieve Fanshop toegevoegd met twintig producten, prijzen, een supporterspakket
 - Fictief ticketportaal toegevoegd voor Blue Rox Stadium (12.000 plaatsen).
 - Reserveren leidt tot een uitverkocht-melding met Rossoneri-grap en confetti.
 - Jeugdspelers worden zonder foto's weergegeven als draaiende thuisshirts met fictieve rugnummers.
+
+## Versie 5.0
+De jeugdselectie wordt automatisch opgebouwd vanuit `data/jeugdspelers.json`. Toevoegen of verwijderen van een naam voegt automatisch een shirt toe of haalt het weg.

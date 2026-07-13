@@ -271,3 +271,5 @@
 .shirt-player-card h3{
   margin-top:4px;
 }
+
+.jeugdspelers-fout{grid-column:1/-1;margin:0;padding:24px;text-align:center;color:#aeb2bd}
