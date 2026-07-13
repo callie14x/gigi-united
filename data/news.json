@@ -1,30 +1,70 @@
 [
   {
+    "slug": "rossoneri-klaar-voor-nieuw-seizoen",
     "title": "Rossoneri klaar voor een nieuw seizoen",
     "date": "2026-07-12",
-    "category": "Clubnieuws",
+    "category": "Supporters",
     "summary": "De supporters zijn er klaar voor. Samen achter Gigi-United, thuis en uit.",
-    "image": "assets/fans/rossoneri-01.jpg"
+    "image": "assets/fans/rossoneri-01.jpg",
+    "imageAlt": "Rossoneri-supporters in de clubkleuren",
+    "content": [
+      "De Rossoneri maken zich op voor een nieuw hoofdstuk in de jonge geschiedenis van Gigi-United. De harde kern wil het Blue Rox Stadium vanaf de eerste thuiswedstrijd laten kolken.",
+      "Vlaggen, sjaals en de bekende roze en lichtblauwe clubkleuren zullen opnieuw het beeld bepalen. De supportersvereniging roept iedereen op om vroeg naar het stadion te komen en negentig minuten lang achter de ploeg te staan.",
+      "De exacte plannen voor de eerste grote sfeeractie blijven voorlopig geheim. Eén ding staat vast: stil zal het niet worden in Gulpen."
+    ],
+    "gallery": [
+      "assets/fans/rossoneri-02.jpg",
+      "assets/fans/rossoneri-06.jpg",
+      "assets/fans/rossoneri-12.jpg"
+    ]
   },
   {
+    "slug": "selectie-hervat-training-in-gulpen",
     "title": "Selectie hervat de training in Gulpen",
     "date": "2026-07-11",
-    "category": "Team",
-    "summary": "De voorbereiding is officieel begonnen.",
-    "image": "assets/training/training-03.jpg"
+    "category": "Eerste elftal",
+    "summary": "De voorbereiding is officieel begonnen op de Gulpener Talent Campus.",
+    "image": "assets/training/training-03.jpg",
+    "imageAlt": "Spelers van Gigi-United tijdens een training",
+    "content": [
+      "De selectie van Gigi-United heeft de training hervat. Op de Gulpener Talent Campus lag de nadruk tijdens de eerste sessie op conditie, balgevoel en korte partijvormen.",
+      "De technische staf wil de komende weken gebruiken om automatismen in te slijpen en nieuwe spelers zo snel mogelijk onderdeel te maken van de groep.",
+      "De sfeer was scherp maar ontspannen. De spelers weten dat er richting de nieuwe competitie nog veel werk te verzetten is."
+    ],
+    "gallery": [
+      "assets/training/training-05.jpg",
+      "assets/training/training-11.jpg",
+      "assets/training/training-18.jpg"
+    ]
   },
   {
-    "title": "Blue Rox Stadium helemaal klaar voor seizoen 2026/27",
+    "slug": "blue-rox-stadium-klaar-voor-seizoen",
+    "title": "Blue Rox Stadium klaar voor seizoen 2026/27",
     "date": "2026-07-10",
     "category": "Stadion",
-    "summary": "De thuishaven wacht op de eerste thuiswedstrijd.",
-    "image": "assets/stadium-hero.jpg"
+    "summary": "De thuishaven van Gigi-United wacht op de eerste thuiswedstrijd.",
+    "image": "assets/stadium-hero.jpg",
+    "imageAlt": "Blue Rox Stadium in het Zuid-Limburgse landschap",
+    "content": [
+      "Blue Rox Stadium is gereed voor een nieuw seizoen. De thuishaven van Gigi-United telt 12.000 plaatsen en vormt opnieuw het decor voor alle thuiswedstrijden van de hoofdmacht.",
+      "Rond het stadion zijn de laatste voorbereidingen afgerond. De club verwacht dat de Rossoneri ook komend seizoen een belangrijke rol spelen in de sfeer op de tribunes.",
+      "De datum van de eerstvolgende thuiswedstrijd wordt later bekendgemaakt."
+    ],
+    "gallery": []
   },
   {
+    "slug": "nieuwe-aanvallende-middenvelder",
     "title": "Gigi-United versterkt zich met aanvallende middenvelder",
     "date": "2026-07-09",
     "category": "Transfer",
     "summary": "De club verwelkomt een nieuwe spelmaker.",
-    "image": "assets/logo-modern.jpg"
+    "image": "assets/logo-modern.jpg",
+    "imageAlt": "Modern clublogo van Gigi-United",
+    "content": [
+      "Gigi-United heeft de selectie versterkt met een aanvallend ingestelde middenvelder. De club ziet in hem een speler die creativiteit en scorend vermogen aan het elftal kan toevoegen.",
+      "De nieuwkomer sluit direct aan bij de groep en zal tijdens de voorbereiding minuten maken.",
+      "Meer informatie over de speler volgt zodra de officiële presentatie heeft plaatsgevonden."
+    ],
+    "gallery": []
   }
 ]

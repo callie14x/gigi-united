@@ -1,0 +1,44 @@
+
+.history-hero{position:relative;min-height:620px;display:flex;align-items:end;background:url("../assets/stadium-hero.jpg") center/cover no-repeat;isolation:isolate}
+.history-hero-overlay{position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(0,0,0,.94),rgba(0,0,0,.42) 62%,rgba(0,0,0,.18)),linear-gradient(to top,rgba(0,0,0,.92),transparent)}
+.history-hero-inner{padding-bottom:72px}
+.history-kicker{margin:0 0 10px;color:#83d8ff;font-size:.76rem;font-weight:900;text-transform:uppercase;letter-spacing:.16em}
+.history-hero h1,.logo-history h2{margin:0;text-transform:uppercase;letter-spacing:-.045em}
+.history-hero h1{font-size:clamp(4rem,8vw,8rem);line-height:.88;background:linear-gradient(90deg,#ff91c8,#83d8ff);-webkit-background-clip:text;color:transparent}
+.history-hero p:last-child{max-width:780px;color:#d8dbe0;font-size:1.1rem}
+.history-intro{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:-28px;position:relative;z-index:3}
+.history-intro div{padding:22px;border:1px solid rgba(255,255,255,.12);border-radius:10px;background:linear-gradient(180deg,#0d1118,#080a0e);box-shadow:0 22px 55px rgba(0,0,0,.3)}
+.history-intro span,.history-intro strong{display:block}
+.history-intro span{color:#ff91c8;font-size:.68rem;font-weight:900;text-transform:uppercase;letter-spacing:.08em}
+.history-intro strong{margin-top:7px;font-size:1.1rem}
+.timeline{position:relative;padding-block:90px}
+.timeline::before{content:"";position:absolute;left:148px;top:90px;bottom:90px;width:2px;background:linear-gradient(#ff5fa2,#83d8ff)}
+.timeline-item{display:grid;grid-template-columns:120px 1fr;gap:56px;position:relative;margin-bottom:68px}
+.timeline-item::before{content:"";position:absolute;left:141px;top:10px;width:16px;height:16px;border:4px solid #05070a;border-radius:50%;background:#ff5fa2;box-shadow:0 0 0 1px rgba(255,255,255,.2)}
+.timeline-year{padding-top:4px;text-align:right;color:#83d8ff;font-weight:1000;text-transform:uppercase;font-size:.85rem}
+.timeline-content{max-width:930px;padding:28px;border:1px solid rgba(255,255,255,.11);border-radius:12px;background:linear-gradient(180deg,#0d1118,#080a0e)}
+.timeline-content h2{margin:0 0 18px;font-size:clamp(2rem,4vw,3.4rem);text-transform:uppercase;letter-spacing:-.03em}
+.timeline-content p{color:#d1d5db}
+.timeline-current .timeline-content{border-color:rgba(255,95,162,.45);background:linear-gradient(135deg,rgba(255,95,162,.11),rgba(131,216,255,.08)),#0a0e14}
+.history-ambitions{display:grid;gap:8px;margin:22px 0;padding-left:20px;color:#e6e8eb}
+.timeline-content blockquote{margin:28px 0;padding:20px 24px;border-left:4px solid #ff5fa2;background:rgba(255,255,255,.03);font-size:1.25rem;font-weight:900}
+.history-final{display:block;margin-top:22px;color:#83d8ff;font-size:1.05rem}
+.logo-history{padding:90px 0;background:linear-gradient(180deg,#090d12,#05070a)}
+.logo-history-head{text-align:center;margin-bottom:38px}
+.logo-history h2{font-size:clamp(2.6rem,5vw,4.8rem)}
+.logo-history-head>p:last-child{color:#aeb2bd}
+.logo-history-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.logo-history-grid article{padding:22px;text-align:center;border:1px solid rgba(255,255,255,.11);border-radius:14px;background:linear-gradient(180deg,#0d1118,#080a0e)}
+.logo-history-grid img{width:100%;aspect-ratio:1/1;object-fit:contain;border-radius:10px;background:#0b0f14}
+.logo-history-grid span{display:block;margin-top:18px;color:#83d8ff;font-size:.68rem;font-weight:900;text-transform:uppercase;letter-spacing:.1em}
+.logo-history-grid h3{margin:5px 0 8px;font-size:1.45rem}
+.logo-history-grid p{color:#aeb2bd;font-size:.86rem}
+.logo-history-grid .current-logo{border-color:rgba(255,95,162,.48);box-shadow:0 20px 60px rgba(255,95,162,.08)}
+@media(max-width:850px){
+  .history-intro{grid-template-columns:1fr;margin-top:0;padding-top:18px}
+  .timeline::before{left:18px}
+  .timeline-item{grid-template-columns:1fr;gap:12px;padding-left:48px}
+  .timeline-item::before{left:11px}
+  .timeline-year{text-align:left}
+  .logo-history-grid{grid-template-columns:1fr}
+}

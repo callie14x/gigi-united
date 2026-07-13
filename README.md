@@ -66,3 +66,19 @@ Fictieve Fanshop toegevoegd met twintig producten, prijzen, een supporterspakket
 
 ## Versie 5.0
 De jeugdselectie wordt automatisch opgebouwd vanuit `data/jeugdspelers.json`. Toevoegen of verwijderen van een naam voegt automatisch een shirt toe of haalt het weg.
+
+
+## Versie 6.0 – complete sitestructuur
+- Volwaardige nieuwspagina met beheer via `data/news.json`.
+- Nieuwste drie artikelen automatisch op de homepage.
+- Ieder artikel opent op een eigen dynamische artikelpagina met tekst en galerij.
+- Club-, Supporters- en Media-hubs toegevoegd.
+- GIGI TV valt onder Media.
+- Clubhistorie, Museum, Hall of Fame, Records, Stadion, Rossoneri, Wallpapers, Perskamer, Match Center en downloads staan klaar als Under Construction-pagina’s.
+
+## Versie 6.1
+- Oprichtingsdatum gecorrigeerd naar 28 november 2004.
+- Huidig clublogo overal vervangen door het logo voor de periode 2026-heden.
+- De jeugdacademie blijft opgericht in 2026.
+- Volledige interactieve clubhistorie en tijdlijn toegevoegd.
+- Logo-overzicht toegevoegd voor 2004-2024, 2024-2026 en 2026-heden.

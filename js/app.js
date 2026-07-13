@@ -50,32 +50,19 @@ function mediaImageFor(post) {
 }
 
 function renderNews(posts) {
-  const sorted = [...posts].sort((a,b) => new Date(b.date) - new Date(a.date));
+  const sorted = [...posts].sort((a,b) => new Date(b.date) - new Date(a.date)).slice(0,3);
   const [first, ...rest] = sorted;
   const container = document.querySelector('#news-grid');
-
+  if (!first) return;
+  const url = slug => `pages/nieuwsartikel.html?artikel=${encodeURIComponent(slug)}`;
   container.innerHTML = `
-    <article class="featured-news" style="background-image:linear-gradient(to top,rgba(0,0,0,.93),rgba(0,0,0,.08)),url('${esc(mediaImageFor(first))}')">
-      <span class="news-tag">${esc(first.category)}</span>
-      <time>${formatDate(first.date)}</time>
-      <h3>${esc(first.title)}</h3>
-      <p>${esc(first.summary)}</p>
-    </article>
+    <a class="featured-news" href="${url(first.slug)}" style="background-image:linear-gradient(to top,rgba(0,0,0,.93),rgba(0,0,0,.08)),url('${esc(mediaImageFor(first))}')">
+      <span class="news-tag">${esc(first.category)}</span><time>${formatDate(first.date)}</time><h3>${esc(first.title)}</h3><p>${esc(first.summary)}</p><strong>Lees verder →</strong>
+    </a>
     <div class="news-list">
-      ${rest.slice(0,4).map(post => `
-        <article class="news-item">
-          <img class="news-thumb" src="${esc(mediaImageFor(post))}" alt="">
-          <div>
-            <span class="news-tag">${esc(post.category)}</span>
-            <time>${formatDate(post.date)}</time>
-            <h3>${esc(post.title)}</h3>
-          </div>
-        </article>
-      `).join('')}
-    </div>
-  `;
+      ${rest.map(post => `<a class="news-item" href="${url(post.slug)}"><img class="news-thumb" src="${esc(mediaImageFor(post))}" alt=""><div><span class="news-tag">${esc(post.category)}</span><time>${formatDate(post.date)}</time><h3>${esc(post.title)}</h3><strong>Lees verder →</strong></div></a>`).join('')}
+    </div>`;
 }
-
 function renderNextMatch(match) {
   const card = document.querySelector('#next-match-card');
   card.innerHTML = `
