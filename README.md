@@ -58,3 +58,8 @@ Selectie van het eerste elftal toegevoegd, verdeeld over keepers, verdedigers, m
 
 ## Versie 4.0
 Fictieve Fanshop toegevoegd met twintig producten, prijzen, een supporterspakket en een 'binnenkort beschikbaar'-melding. De winkelwagenknoppen openen uitsluitend een informatieve pop-up; er vinden geen verkopen plaats.
+
+## Versie 4.1
+- Fictief ticketportaal toegevoegd voor Blue Rox Stadium (12.000 plaatsen).
+- Reserveren leidt tot een uitverkocht-melding met Rossoneri-grap en confetti.
+- Jeugdspelers worden zonder foto's weergegeven als draaiende thuisshirts met fictieve rugnummers.

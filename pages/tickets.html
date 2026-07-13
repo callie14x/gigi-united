@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Fictief ticketportaal van Gigi-United.">
+  <title>Gigi-United | Tickets</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/tickets.css">
+</head>
+<body class="tickets-page">
+<header class="topbar">
+  <a class="brand" href="../index.html">
+    <img src="../assets/logo-modern.jpg" alt="Gigi-United">
+    <div><strong>GIGI-UNITED</strong><span>Gulpen · Est. 2024</span></div>
+  </a>
+  <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+  <nav id="main-nav" class="main-nav">
+    <a href="../index.html">Home</a>
+    <a href="eerste-elftal.html">Eerste elftal</a>
+    <a href="jeugdacademie.html">Jeugdacademie</a>
+    <a href="club.html">Club</a>
+    <a href="../index.html#stadion">Stadion</a>
+    <a href="fans.html">Supporters</a>
+    <a href="media.html">Media</a>
+    <a href="fanshop.html">Fanshop</a>
+    <a class="active" href="tickets.html">Tickets</a>
+  </nav>
+</header>
+
+<main>
+  <section class="ticket-hero">
+    <div class="ticket-hero-overlay"></div>
+    <div class="ticket-hero-content shell">
+      <p class="ticket-kicker">Blue Rox Stadium</p>
+      <h1>Tickets</h1>
+      <p>12.000 plaatsen. Eén thuis. Een leger aan Rossoneri.</p>
+    </div>
+  </section>
+
+  <section class="ticket-sale shell">
+    <div class="ticket-match-card">
+      <div class="ticket-match-label">Eerstvolgende thuiswedstrijd</div>
+      <div class="ticket-match-main">
+        <img src="../assets/logo-modern.jpg" alt="Gigi-United">
+        <div>
+          <h2>Thuiswedstrijd wordt binnenkort bekendgemaakt</h2>
+          <p>Blue Rox Stadium · Gulpen</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="ticket-counter-card">
+      <span>Capaciteit</span>
+      <strong>12.000</strong>
+      <span>Verkocht</span>
+      <strong id="sold-count">11.994</strong>
+      <div class="ticket-progress"><span id="ticket-progress-bar"></span></div>
+      <small id="availability-text">Nog 6 plaatsen beschikbaar</small>
+    </div>
+  </section>
+
+  <section class="ticket-options shell">
+    <div class="ticket-heading">
+      <div><p class="ticket-kicker">Kies jouw plek</p><h2>Tribunes</h2></div>
+      <span>Fictieve ticketprijzen</span>
+    </div>
+
+    <div class="ticket-grid">
+      <label class="ticket-option selected">
+        <input type="radio" name="tribune" value="Rossoneri Noord" checked>
+        <span class="ticket-option-name">Rossoneri Noord</span>
+        <span class="ticket-option-info">De harde kern · staantribune</span>
+        <strong>€ 18,00</strong>
+      </label>
+      <label class="ticket-option">
+        <input type="radio" name="tribune" value="Tribune Oost">
+        <span class="ticket-option-name">Tribune Oost</span>
+        <span class="ticket-option-info">Vrij zicht langs de lijn</span>
+        <strong>€ 22,00</strong>
+      </label>
+      <label class="ticket-option">
+        <input type="radio" name="tribune" value="Tribune West">
+        <span class="ticket-option-name">Tribune West</span>
+        <span class="ticket-option-info">Comfortabele zitplaatsen</span>
+        <strong>€ 24,00</strong>
+      </label>
+      <label class="ticket-option">
+        <input type="radio" name="tribune" value="Hoofdtribune">
+        <span class="ticket-option-name">Hoofdtribune</span>
+        <span class="ticket-option-info">Centraal en overdekt</span>
+        <strong>€ 32,00</strong>
+      </label>
+      <label class="ticket-option">
+        <input type="radio" name="tribune" value="Business Lounge">
+        <span class="ticket-option-name">Business Lounge</span>
+        <span class="ticket-option-info">Hospitality en de beste plaatsen</span>
+        <strong>€ 89,00</strong>
+      </label>
+    </div>
+
+    <div class="ticket-checkout">
+      <div class="ticket-quantity">
+        <span>Aantal kaarten</span>
+        <button type="button" id="minus-ticket">−</button>
+        <strong id="ticket-quantity">2</strong>
+        <button type="button" id="plus-ticket">+</button>
+      </div>
+      <button class="ticket-reserve" type="button" id="reserve-tickets">Reserveer tickets</button>
+    </div>
+  </section>
+</main>
+
+<div class="soldout-modal" id="soldout-modal" aria-hidden="true">
+  <canvas id="confetti-canvas"></canvas>
+  <div class="soldout-card" role="dialog" aria-modal="true">
+    <div class="soldout-emoji">😔</div>
+    <h2>Helaas...</h2>
+    <p>Terwijl jij een plek uitzocht...</p>
+    <p>hebben de <strong>Rossoneri</strong> het stadion alweer volledig gevuld.</p>
+    <div class="soldout-stadium">
+      <span>Blue Rox Stadium</span>
+      <strong>UITVERKOCHT</strong>
+    </div>
+    <div class="soldout-stats">
+      <div><span>Capaciteit</span><strong>12.000</strong></div>
+      <div><span>Verkocht</span><strong>12.000</strong></div>
+    </div>
+    <p>❤ Bedankt voor jullie geweldige steun!</p>
+    <strong class="soldout-hashtag">#TrotsOpGulpen</strong>
+    <a href="../index.html">Terug naar Home</a>
+  </div>
+</div>
+
+<footer>
+  <img src="../assets/logo-modern.jpg" alt="">
+  <div><strong>Gigi-United Tickets</strong><span>Blue Rox Stadium · 12.000 plaatsen</span></div>
+</footer>
+
+<script>
+const menuButton=document.querySelector('.menu-toggle');
+const nav=document.querySelector('.main-nav');
+menuButton?.addEventListener('click',()=>{
+  const open=nav.classList.toggle('open');
+  menuButton.setAttribute('aria-expanded',String(open));
+});
+
+document.querySelectorAll('.ticket-option').forEach(option=>{
+  option.addEventListener('click',()=>{
+    document.querySelectorAll('.ticket-option').forEach(item=>item.classList.remove('selected'));
+    option.classList.add('selected');
+  });
+});
+
+let quantity=2;
+const quantityNode=document.querySelector('#ticket-quantity');
+document.querySelector('#minus-ticket').addEventListener('click',()=>{
+  quantity=Math.max(1,quantity-1); quantityNode.textContent=quantity;
+});
+document.querySelector('#plus-ticket').addEventListener('click',()=>{
+  quantity=Math.min(6,quantity+1); quantityNode.textContent=quantity;
+});
+
+const modal=document.querySelector('#soldout-modal');
+const sold=document.querySelector('#sold-count');
+const availability=document.querySelector('#availability-text');
+const progress=document.querySelector('#ticket-progress-bar');
+
+document.querySelector('#reserve-tickets').addEventListener('click',()=>{
+  let value=11994;
+  const timer=setInterval(()=>{
+    value+=1;
+    sold.textContent=value.toLocaleString('nl-NL');
+    progress.style.width=(value/12000*100)+'%';
+    availability.textContent=value<12000 ? `Nog ${12000-value} plaatsen beschikbaar` : 'UITVERKOCHT';
+    if(value>=12000){
+      clearInterval(timer);
+      setTimeout(()=>{
+        modal.classList.add('open');
+        modal.setAttribute('aria-hidden','false');
+        launchConfetti();
+      },350);
+    }
+  },180);
+});
+
+function launchConfetti(){
+  const canvas=document.querySelector('#confetti-canvas');
+  const ctx=canvas.getContext('2d');
+  const resize=()=>{canvas.width=innerWidth;canvas.height=innerHeight};
+  resize();
+  const pieces=Array.from({length:150},()=>({
+    x:Math.random()*canvas.width,y:-20-Math.random()*canvas.height,
+    w:5+Math.random()*8,h:8+Math.random()*12,
+    vy:2+Math.random()*5,vx:-2+Math.random()*4,
+    r:Math.random()*Math.PI,vr:-.12+Math.random()*.24,
+    color:['#ff5fa2','#83d8ff','#ffffff','#111111'][Math.floor(Math.random()*4)]
+  }));
+  let frames=0;
+  function draw(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    pieces.forEach(p=>{
+      p.x+=p.vx;p.y+=p.vy;p.r+=p.vr;
+      ctx.save();ctx.translate(p.x,p.y);ctx.rotate(p.r);ctx.fillStyle=p.color;
+      ctx.fillRect(-p.w/2,-p.h/2,p.w,p.h);ctx.restore();
+    });
+    frames++;
+    if(frames<420) requestAnimationFrame(draw);
+  }
+  draw();
+}
+</script>
+</body>
+</html>

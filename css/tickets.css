@@ -1,0 +1,63 @@
+
+.tickets-page{background:#05070a;color:#f7f7f5}
+.ticket-hero{position:relative;min-height:540px;display:flex;align-items:end;background:url("../assets/stadium-hero.jpg") center/cover no-repeat;isolation:isolate}
+.ticket-hero-overlay{position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(0,0,0,.93),rgba(0,0,0,.42) 60%,rgba(0,0,0,.16)),linear-gradient(to top,rgba(0,0,0,.9),transparent)}
+.ticket-hero-content{padding-bottom:64px}
+.ticket-kicker{margin:0 0 10px;color:#83d8ff;font-size:.75rem;font-weight:900;text-transform:uppercase;letter-spacing:.16em}
+.ticket-hero h1,.ticket-heading h2{margin:0;text-transform:uppercase;letter-spacing:-.04em}
+.ticket-hero h1{font-size:clamp(4rem,9vw,8rem);background:linear-gradient(90deg,#ff91c8,#83d8ff);-webkit-background-clip:text;color:transparent}
+.ticket-hero p:not(.ticket-kicker){font-size:1.12rem;color:#d6d9df}
+.ticket-sale{display:grid;grid-template-columns:1.4fr .6fr;gap:16px;margin-top:-28px;position:relative;z-index:3}
+.ticket-match-card,.ticket-counter-card,.ticket-option,.ticket-checkout{border:1px solid rgba(255,255,255,.12);border-radius:12px;background:linear-gradient(180deg,#0d1118,#080a0e);box-shadow:0 22px 55px rgba(0,0,0,.3)}
+.ticket-match-label{padding:12px 18px;border-bottom:1px solid rgba(255,255,255,.08);color:#ff91c8;font-size:.72rem;font-weight:900;text-transform:uppercase}
+.ticket-match-main{display:flex;align-items:center;gap:20px;padding:22px}
+.ticket-match-main img{width:90px;height:90px;object-fit:cover;border-radius:10px}
+.ticket-match-main h2{margin:0 0 8px;font-size:1.45rem}
+.ticket-match-main p{margin:0;color:#aeb2bd}
+.ticket-counter-card{padding:22px}
+.ticket-counter-card span,.ticket-counter-card strong{display:block}
+.ticket-counter-card span{color:#aeb2bd;font-size:.68rem;text-transform:uppercase}
+.ticket-counter-card strong{font-size:1.45rem;margin-bottom:8px}
+.ticket-progress{height:7px;margin:10px 0;background:rgba(255,255,255,.08);border-radius:99px;overflow:hidden}
+.ticket-progress span{display:block;width:99.95%;height:100%;background:linear-gradient(90deg,#ff5fa2,#83d8ff)}
+.ticket-counter-card small{color:#ff91c8}
+.ticket-options{padding-block:72px}
+.ticket-heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:25px}
+.ticket-heading h2{font-size:clamp(2.5rem,5vw,4.5rem)}
+.ticket-heading>span{color:#aeb2bd;font-size:.75rem;text-transform:uppercase}
+.ticket-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.ticket-option{position:relative;padding:20px;cursor:pointer;transition:.2s}
+.ticket-option input{position:absolute;opacity:0}
+.ticket-option:hover,.ticket-option.selected{border-color:#ff5fa2;transform:translateY(-3px)}
+.ticket-option-name,.ticket-option-info,.ticket-option strong{display:block}
+.ticket-option-name{font-weight:900;text-transform:uppercase}
+.ticket-option-info{min-height:42px;margin:8px 0;color:#aeb2bd;font-size:.78rem}
+.ticket-option strong{color:#83d8ff;font-size:1.15rem}
+.ticket-checkout{display:flex;justify-content:space-between;align-items:center;gap:24px;margin-top:20px;padding:20px}
+.ticket-quantity{display:flex;align-items:center;gap:14px}
+.ticket-quantity>span{color:#aeb2bd;text-transform:uppercase;font-size:.72rem}
+.ticket-quantity button{width:34px;height:34px;border:1px solid rgba(255,255,255,.15);border-radius:50%;background:#0b0f14;color:white;font-size:1.2rem}
+.ticket-reserve{padding:13px 22px;border:0;border-radius:5px;background:linear-gradient(90deg,#ff5fa2,#83d8ff);color:#10070d;font-weight:900;text-transform:uppercase;cursor:pointer}
+.soldout-modal{position:fixed;inset:0;z-index:250;display:none;place-items:center;padding:20px;background:rgba(0,0,0,.82);backdrop-filter:blur(8px)}
+.soldout-modal.open{display:grid}
+#confetti-canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.soldout-card{position:relative;z-index:2;width:min(540px,100%);padding:36px;text-align:center;border:1px solid rgba(255,255,255,.15);border-radius:18px;background:#0a0e14;box-shadow:0 35px 100px rgba(0,0,0,.65)}
+.soldout-emoji{font-size:3.2rem}
+.soldout-card h2{margin:8px 0 15px;font-size:2.4rem;text-transform:uppercase}
+.soldout-card p{color:#d4d7dc}
+.soldout-stadium{margin:22px 0;padding:20px;border:1px solid rgba(255,255,255,.1);background:linear-gradient(135deg,rgba(255,95,162,.13),rgba(131,216,255,.1))}
+.soldout-stadium span,.soldout-stadium strong{display:block;text-transform:uppercase}
+.soldout-stadium strong{margin-top:4px;color:#ff5fa2;font-size:2.2rem}
+.soldout-stats{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.soldout-stats div{padding:14px;border:1px solid rgba(255,255,255,.1);border-radius:8px}
+.soldout-stats span,.soldout-stats strong{display:block}
+.soldout-stats span{color:#aeb2bd;font-size:.68rem;text-transform:uppercase}
+.soldout-stats strong{font-size:1.4rem}
+.soldout-hashtag{display:block;color:#83d8ff;margin:18px 0}
+.soldout-card a{display:inline-flex;padding:12px 18px;border-radius:5px;background:linear-gradient(90deg,#ff5fa2,#83d8ff);color:#10070d;font-weight:900;text-transform:uppercase}
+@media(max-width:1000px){.ticket-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){
+ .ticket-sale{grid-template-columns:1fr;margin-top:0;padding-top:18px}
+ .ticket-grid{grid-template-columns:1fr}
+ .ticket-checkout,.ticket-heading{align-items:flex-start;flex-direction:column}
+}
