@@ -31,3 +31,7 @@ Supporters- en trainingsnieuws gebruikt automatisch een passende afbeelding.
 
 ## Versie 3.0
 Definitieve jeugdacademiepagina met stafportretten, 15 spelerskaarten, Aker Cup, programma, countdown, jeugdnieuws en galerie.
+
+
+## Versie 3.1
+Jeugdacademiepagina aangepast naar de definitieve goedgekeurde layout.
