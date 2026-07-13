@@ -127,3 +127,68 @@
 .v31-news-row{
   grid-template-columns:repeat(3,1fr);
 }
+
+/* v3.5 - fotoloze staf- en spelerskaarten */
+.text-only-card{
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+}
+.staff-initials{
+  width:92px;
+  height:92px;
+  margin:16px auto 12px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  border:1px solid rgba(213,166,61,.7);
+  background:linear-gradient(135deg,rgba(213,166,61,.14),rgba(255,95,162,.08));
+  color:var(--gold2);
+  font-size:1.6rem;
+  font-weight:1000;
+  letter-spacing:.04em;
+}
+.staff-initials.small{
+  width:70px;
+  height:70px;
+  margin:0 auto 8px;
+  font-size:1.15rem;
+}
+.scouts-text-only{
+  align-items:stretch;
+}
+.scouts-text-only>div{
+  min-height:118px;
+  padding:12px 8px;
+  border:1px solid rgba(213,166,61,.28);
+  border-radius:6px;
+  background:rgba(255,255,255,.015);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.text-player-card{
+  min-height:142px;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+}
+.player-initials{
+  width:72px;
+  height:72px;
+  margin:18px auto 10px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  border:1px solid rgba(213,166,61,.55);
+  background:linear-gradient(135deg,rgba(213,166,61,.12),rgba(131,216,255,.08));
+  color:#f7f7f5;
+  font-size:1.1rem;
+  font-weight:1000;
+}
+.text-player-card h3{
+  min-height:34px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}

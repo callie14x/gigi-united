@@ -51,3 +51,10 @@ Navigatie vereenvoudigd: Wedstrijden en Selectie zijn samengevoegd onder één n
 
 ## Versie 3.4
 Selectie van het eerste elftal toegevoegd, verdeeld over keepers, verdedigers, middenvelders en aanvallers. Per speler worden naam, leeftijd en nationaliteit getoond.
+
+## Versie 3.5
+- Eerste elftal: leeftijden vereenvoudigd naar alleen hele jaren.
+- Jeugdacademie: staf- en spelersfoto's verwijderd; layout behouden met tekstkaarten en initialen.
+
+## Versie 4.0
+Fictieve Fanshop toegevoegd met twintig producten, prijzen, een supporterspakket en een 'binnenkort beschikbaar'-melding. De winkelwagenknoppen openen uitsluitend een informatieve pop-up; er vinden geen verkopen plaats.
