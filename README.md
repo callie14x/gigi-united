@@ -27,3 +27,7 @@ Open `data/standings.json`.
 - `assets/training/training-01.jpg` t/m `training-20.jpg`
 
 Supporters- en trainingsnieuws gebruikt automatisch een passende afbeelding.
+
+
+## Versie 3.0
+Definitieve jeugdacademiepagina met stafportretten, 15 spelerskaarten, Aker Cup, programma, countdown, jeugdnieuws en galerie.
